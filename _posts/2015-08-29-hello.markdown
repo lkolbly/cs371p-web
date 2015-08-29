@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Hello, World!"
+date: 2015-08-29
+categories:
+---
+Hi, welcome to Lane Kolbly's blog for CS371P (Object Oriented Programming)!
+
+I run this blog because I get extra credit in the class, and this blog is for the class.
