@@ -50,4 +50,6 @@ So what I see is that I have issues with the material presented in class, but th
 
 A programming tip of the week: If you need to read 1.7 million images into Apache Spark, don't use binaryFiles on a directory of 1.7 million files. binaryFiles will spend literally hours building a table of all the files and will eventually return an OutOfMemory exception. Instead, base64 encode the files into lines, and put each line into a big gzipped file, and read it with textFiles (you can also have several big gzipped files, and spread the little files across them). The gzipping almost offsets the size expansion of the base64 step, at least in my case.
 
+Even if you don't need to load them into Spark, don't put 1.7 million images into a flat directory anyway, because it takes several minutes to read the directory listing.
+
 [1] $16,524/LB at time of writing, $3.2 million for the average male and $2.7 million for the average female, which coincidentally matches the lifetime earnings of a male or female ($3.5 million and $2.9 million, respectively) with a PhD, according to [a 2009 report by the Georgetown University Center on Education and the Workforce](https://www2.ed.gov/policy/highered/reg/hearulemaking/2011/collegepayoff.pdf) page 10. New theory: Women are discriminated against not because of their gender, but because of their weight.
