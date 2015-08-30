@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>First Post</title>
+  <meta name="description" content="Welcome to the class.">
+
+  <link rel="stylesheet" href="/cs371p-web/css/main.css">
+  <link rel="canonical" href="http://lkolbly.github.io/cs371p-web/2015/08/30/first-post.html">
+  <link rel="alternate" type="application/rss+xml" title="CS371p Fall 2015: Lane Kolbly" href="http://lkolbly.github.io/cs371p-web/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/cs371p-web/">Home</a>
+        
+          
+          <a class="page-link" href="/cs371p-web/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">First Post</h1>
+     <p class="post-meta">Posted on Aug 30, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>Welcome to the class.</p>
+
+<p>They say that a first impression is the strongest impression. I&#39;m currently reading the book &quot;Blink&quot;, by Malcolm Gladwell (author of &quot;The Tipping Point&quot;), which speaks only of this phenomenon for 300 pages. A good read, actually, I highly recommend it, though it does come off a little bit like Stephan Wolfram&#39;s book &quot;A New Kind of Science&quot; (which is also worth reading).</p>
+
+<p>I digress. What does this have to do with Professor Downing&#39;s class, CS 371P (Object Oriented Programming) at UT?</p>
+
+<p>Glenn Downing is an award-winning teacher. He&#39;s worked at JPL, Los Alamos, and MCC, he&#39;s won three teaching awards, and he holds a patent in a &quot;System and method for initializing variables in an object-oriented program&quot;. He has a daughter that he&#39;s very proud of, he seems like a great guy to be around, your typical case for teacher of the year.</p>
+
+<p>Except that he&#39;s wrong.</p>
+
+<p>I have a personal bias against C++, and I have a personal bias against people who put their curly braces after their return statement:
+<code>
+int main() {
+   cout &lt;&lt; &quot;Hello, world!&quot; &lt;&lt; endl;
+   return 0;}
+</code>
+How can I trust someone who does that?</p>
+
+<p>But on a serious note, putting code into a header file is wrong. It leads to multiple dependency errors in large projects, in the case where you have 2 C++ files, each of which includes the same header, and then the two C++ files are later linked together.</p>
+
+<p>In the particular case of the class, it only became an issue because of the way gcov aggregates its statistics on a per-file basis, and the makefile for the class was checking the C++ file for the coverage statistics of the function in question, not the header file:
+<code>
+$ gcov -b ./Coverage2.c++ | grep -A 5 &quot;File &#39;Coverage2.c++&#39;&quot;
+instead of:
+$ gcov -b ./Coverage2.c++ | grep -A 5 &quot;File &#39;Collatz2.h&#39;&quot;
+</code></p>
+
+<p>On the other hand, Professor Downing does the unique practice of calling on people in class. I think this practice is wonderful and should be in all classes - it forces a student to think, on the spot, about a problem, like triage. I&#39;m not a fan of competitive coding, hackathons, or that type of thing, because I find them too stressful of a hobby (if you want me to be stressed, you have to pay me, and a prize is not money in the bank). But one thing that they teach is the ability to triage a situation and go in a direction, and not freeze or over-analyze.</p>
+
+<p>I should speak some words also about how this class seems to be emphasizing the tools more than the programming itself. Namely, Github, Travis CI, gcov, doxygen, etc. Personally I think any programmer worth their weight in gold [1] should be able to pick up these tools in any given weekend, so a class is pointless.</p>
+
+<p>So what I see is that I have issues with the material presented in class, but the material is well-taught. I opened talking about first impressions - we&#39;ve only had two classes so far, and no homework or projects, so I&#39;m going to keep an open mind and we&#39;ll see how this next project goes.</p>
+
+<p>[1] $16,524/LB at time of writing, $3.2 million for the average male and $2.7 million for the average female, which coincidentally matches the lifetime earnings of a male or female ($3.5 million and $2.9 million, respectively) with a PhD, according to <a href="https://www2.ed.gov/policy/highered/reg/hearulemaking/2011/collegepayoff.pdf">a 2009 report by the Georgetown University Center on Education and the Workforce</a> page 10. New theory: Women are not discriminated against because of their gender, but because of their weight.</p>
+
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Copyright &copy; <a href=http://diezcami.github.io target="_blank">Camille Diez</a> 2015<BR />
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+
+</div>
+
+
+  </body>
+</html>

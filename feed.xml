@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CS371P</title>
+    <title>CS371p Fall 2015: Lane Kolbly</title>
     <description>Website for CS371P, Object Oriented Programming
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Aug 2015 11:15:30 -0500</pubDate>
-    <lastBuildDate>Sat, 29 Aug 2015 11:15:30 -0500</lastBuildDate>
+    <pubDate>Sun, 30 Aug 2015 09:54:37 -0500</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2015 09:54:37 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>First Post</title>
+        <description>&lt;p&gt;Welcome to the class.&lt;/p&gt;
+
+&lt;p&gt;They say that a first impression is the strongest impression. I&amp;#39;m currently reading the book &amp;quot;Blink&amp;quot;, by Malcolm Gladwell (author of &amp;quot;The Tipping Point&amp;quot;), which speaks only of this phenomenon for 300 pages. A good read, actually, I highly recommend it, though it does come off a little bit like Stephan Wolfram&amp;#39;s book &amp;quot;A New Kind of Science&amp;quot; (which is also worth reading).&lt;/p&gt;
+
+&lt;p&gt;I digress. What does this have to do with Professor Downing&amp;#39;s class, CS 371P (Object Oriented Programming) at UT?&lt;/p&gt;
+
+&lt;p&gt;Glenn Downing is an award-winning teacher. He&amp;#39;s worked at JPL, Los Alamos, and MCC, he&amp;#39;s won three teaching awards, and he holds a patent in a &amp;quot;System and method for initializing variables in an object-oriented program&amp;quot;. He has a daughter that he&amp;#39;s very proud of, he seems like a great guy to be around, your typical case for teacher of the year.&lt;/p&gt;
+
+&lt;p&gt;Except that he&amp;#39;s wrong.&lt;/p&gt;
+
+&lt;p&gt;I have a personal bias against C++, and I have a personal bias against people who put their curly braces after their return statement:
+&lt;code&gt;
+int main() {
+   cout &amp;lt;&amp;lt; &amp;quot;Hello, world!&amp;quot; &amp;lt;&amp;lt; endl;
+   return 0;}
+&lt;/code&gt;
+How can I trust someone who does that?&lt;/p&gt;
+
+&lt;p&gt;But on a serious note, putting code into a header file is wrong. It leads to multiple dependency errors in large projects, in the case where you have 2 C++ files, each of which includes the same header, and then the two C++ files are later linked together.&lt;/p&gt;
+
+&lt;p&gt;In the particular case of the class, it only became an issue because of the way gcov aggregates its statistics on a per-file basis, and the makefile for the class was checking the C++ file for the coverage statistics of the function in question, not the header file:
+&lt;code&gt;
+$ gcov -b ./Coverage2.c++ | grep -A 5 &amp;quot;File &amp;#39;Coverage2.c++&amp;#39;&amp;quot;
+instead of:
+$ gcov -b ./Coverage2.c++ | grep -A 5 &amp;quot;File &amp;#39;Collatz2.h&amp;#39;&amp;quot;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;On the other hand, Professor Downing does the unique practice of calling on people in class. I think this practice is wonderful and should be in all classes - it forces a student to think, on the spot, about a problem, like triage. I&amp;#39;m not a fan of competitive coding, hackathons, or that type of thing, because I find them too stressful of a hobby (if you want me to be stressed, you have to pay me, and a prize is not money in the bank). But one thing that they teach is the ability to triage a situation and go in a direction, and not freeze or over-analyze.&lt;/p&gt;
+
+&lt;p&gt;I should speak some words also about how this class seems to be emphasizing the tools more than the programming itself. Namely, Github, Travis CI, gcov, doxygen, etc. Personally I think any programmer worth their weight in gold [1] should be able to pick up these tools in any given weekend, so a class is pointless.&lt;/p&gt;
+
+&lt;p&gt;So what I see is that I have issues with the material presented in class, but the material is well-taught. I opened talking about first impressions - we&amp;#39;ve only had two classes so far, and no homework or projects, so I&amp;#39;m going to keep an open mind and we&amp;#39;ll see how this next project goes.&lt;/p&gt;
+
+&lt;p&gt;[1] $16,524/LB at time of writing, $3.2 million for the average male and $2.7 million for the average female, which coincidentally matches the lifetime earnings of a male or female ($3.5 million and $2.9 million, respectively) with a PhD, according to &lt;a href=&quot;https://www2.ed.gov/policy/highered/reg/hearulemaking/2011/collegepayoff.pdf&quot;&gt;a 2009 report by the Georgetown University Center on Education and the Workforce&lt;/a&gt; page 10. New theory: Women are not discriminated against because of their gender, but because of their weight.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Aug 2015 00:00:00 -0500</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/08/30/first-post.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/08/30/first-post.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Hello, World!</title>
