@@ -45,4 +45,4 @@ Tip of the week: Know the "bus factor": It's the number of people that can be hi
 
 As always, assume the buses are smart and malicious.
 
-<img src="busfactor.jpg" />
+<img src="{{ "/busfactor.jpg" | prepend: site.baseurl }}" />
