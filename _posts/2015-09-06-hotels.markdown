@@ -1,0 +1,48 @@
+---
+layout: post
+title: "The Collatz Algorithm"
+date: 2015-09-06
+categories:
+---
+First off, shameless plug. Fill out the XKCD survey if you haven't already:
+[https://docs.google.com/forms/d/1PhEmGqYI84n6WmqifWf8ExLNe3EVBLcBPs1owYXWfPs/viewform?c=0&w=1]
+
+Week two of my experience in CS371p (Object Oriented Programming). This week we started our first project, a program to find the longest Collatz chain within a range of numbers.
+
+Not a difficult problem to solve by any stretch of the word.
+
+But the difficulty in the project lies not in the programming. It lies in the paperwork around the project that we have to do. The goal of this class is not to learn object oriented programming, but to learn the tools of the trade: Git, continuous integration, unit tests, issue tracking, and so forth.
+
+I don't know what the right way to teach these things is. I personally learned them through using them - I went to work at a company. The company used tool XYZ. I learned tool XYZ. I learned Git at WP Engine. I learned testing at Click Security (despite what they may tell you). Even though L5 proved beyond a doubt that freelancing was not what I was meant for, I learned many valuable lessons there about ethics and timekeeping and tests and documentation etc.
+
+In each of these cases, though, I was in the real world using the tools. I learned how to use issue tracking in a world where we had to track thousands of issues at the same time quickly and efficiently or else the company would fold under its own weight.
+
+The class attempts to teach issue tracking by forcing us to use an issue tracker. Naively, you might think that's great. But we're forced to file a certain number of issues, on a project which we're working alone on. Issue trackers are not built to track issues, tracking issues is easy and any programmer worth giving a keyboard knows how to keep a TODO list of issues. I personally use a text file, some use post-it notes. Some use an issue tracker for that, there's nothing wrong with that.
+
+But let's be honest, it takes about a second to learn how to use the Github issue tracker.
+
+The real power of issue tracking is in coordinating people. Imagine you work in a company of about 120-130 people. There are maybe a half-dozen technical teams at said company. Now imagine you are working on a problem where people with Italian names don't appear in the final product. (by the way, the product consists of a data pipeline where data is piped from the customer, through machinery, and then gets moved to the product team's territory) You are the person responsible for fixing the problem. What do you do?
+
+You probably try to identify the problem in the part you have control over, the data pipeline. You look through it, make some notes, and then posit that it is a problem with the product team. So you go over to Jill's desk and tell her, "Hey, I've been working on bug XYZ." You tell her what you know, she writes it on a post-it, and you part ways as happy workfellows.
+
+A couple weeks later, maybe it's on a Wednesday and the company catered BBQ that day. You sit down to your ribs, and Greg sits down across from you and asks, "Hey, so is bug XYZ fixed?"
+
+You reply, "Dude, I'm eating BBQ, buzz off."
+
+Just kidding. You reply, "I don't know, I gave that to Jill."
+
+Greg thanks you and goes to Jill. Jill says she gave it to Jimbo. Jimbo gave it to Kat. Kat got married last weekend and will be off the grid on her honeymoon until late next week.
+
+So now nobody knows if it's been fixed. Maybe Kat fixed it but hasn't committed it yet. Maybe she's halfway fixed it. Maybe she gave it to someone else in the company.
+
+Enter the infomercial voiceover. "If you've ever had problems like these... Try issue tracking! <small>May cause heart problems or temporary insanity. See your doctor for details.</small>"
+
+This is what issue tracking is for, and the in-class projects are (so far) a poor representation of that.
+
+Note that I'm not espousing any particular way that I think issue tracking should be taught. I think it is impractical for everyone to learn on the job. I have long thought that programming should be taught via a single, large, open-source project. You are graded based on your contributions. End of story.
+
+Tip of the week: Know the "bus factor": It's the number of people that can be hit by a bus before the project fails. A larger number is better. That way, no one person is in charge of too much - if the bus factor is 1 or 2 in a large company (>20 people), then maybe their job encompasses too much.
+
+As always, assume the buses are smart and malicious.
+
+<img src="busfactor.jpg" />
