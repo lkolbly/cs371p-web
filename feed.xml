@@ -6,9 +6,61 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Aug 2015 10:56:13 -0500</pubDate>
-    <lastBuildDate>Sun, 30 Aug 2015 10:56:13 -0500</lastBuildDate>
+    <pubDate>Sun, 06 Sep 2015 21:31:13 -0500</pubDate>
+    <lastBuildDate>Sun, 06 Sep 2015 21:31:13 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>The Collatz Algorithm</title>
+        <description>&lt;p&gt;First off, shameless plug. Fill out the XKCD survey if you haven&amp;#39;t already:
+[&lt;a href=&quot;https://docs.google.com/forms/d/1PhEmGqYI84n6WmqifWf8ExLNe3EVBLcBPs1owYXWfPs/viewform?c=0&amp;amp;w=1&quot;&gt;https://docs.google.com/forms/d/1PhEmGqYI84n6WmqifWf8ExLNe3EVBLcBPs1owYXWfPs/viewform?c=0&amp;amp;w=1&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;Week two of my experience in CS371p (Object Oriented Programming). This week we started our first project, a program to find the longest Collatz chain within a range of numbers.&lt;/p&gt;
+
+&lt;p&gt;Not a difficult problem to solve by any stretch of the word.&lt;/p&gt;
+
+&lt;p&gt;But the difficulty in the project lies not in the programming. It lies in the paperwork around the project that we have to do. The goal of this class is not to learn object oriented programming, but to learn the tools of the trade: Git, continuous integration, unit tests, issue tracking, and so forth.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#39;t know what the right way to teach these things is. I personally learned them through using them - I went to work at a company. The company used tool XYZ. I learned tool XYZ. I learned Git at WP Engine. I learned testing at Click Security (despite what they may tell you). Even though L5 proved beyond a doubt that freelancing was not what I was meant for, I learned many valuable lessons there about ethics and timekeeping and tests and documentation etc.&lt;/p&gt;
+
+&lt;p&gt;In each of these cases, though, I was in the real world using the tools. I learned how to use issue tracking in a world where we had to track thousands of issues at the same time quickly and efficiently or else the company would fold under its own weight.&lt;/p&gt;
+
+&lt;p&gt;The class attempts to teach issue tracking by forcing us to use an issue tracker. Naively, you might think that&amp;#39;s great. But we&amp;#39;re forced to file a certain number of issues, on a project which we&amp;#39;re working alone on. Issue trackers are not built to track issues, tracking issues is easy and any programmer worth giving a keyboard knows how to keep a TODO list of issues. I personally use a text file, some use post-it notes. Some use an issue tracker for that, there&amp;#39;s nothing wrong with that.&lt;/p&gt;
+
+&lt;p&gt;But let&amp;#39;s be honest, it takes about a second to learn how to use the Github issue tracker.&lt;/p&gt;
+
+&lt;p&gt;The real power of issue tracking is in coordinating people. Imagine you work in a company of about 120-130 people. There are maybe a half-dozen technical teams at said company. Now imagine you are working on a problem where people with Italian names don&amp;#39;t appear in the final product. (by the way, the product consists of a data pipeline where data is piped from the customer, through machinery, and then gets moved to the product team&amp;#39;s territory) You are the person responsible for fixing the problem. What do you do?&lt;/p&gt;
+
+&lt;p&gt;You probably try to identify the problem in the part you have control over, the data pipeline. You look through it, make some notes, and then posit that it is a problem with the product team. So you go over to Jill&amp;#39;s desk and tell her, &amp;quot;Hey, I&amp;#39;ve been working on bug XYZ.&amp;quot; You tell her what you know, she writes it on a post-it, and you part ways as happy workfellows.&lt;/p&gt;
+
+&lt;p&gt;A couple weeks later, maybe it&amp;#39;s on a Wednesday and the company catered BBQ that day. You sit down to your ribs, and Greg sits down across from you and asks, &amp;quot;Hey, so is bug XYZ fixed?&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;You reply, &amp;quot;Dude, I&amp;#39;m eating BBQ, buzz off.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Just kidding. You reply, &amp;quot;I don&amp;#39;t know, I gave that to Jill.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Greg thanks you and goes to Jill. Jill says she gave it to Jimbo. Jimbo gave it to Kat. Kat got married last weekend and will be off the grid on her honeymoon until late next week.&lt;/p&gt;
+
+&lt;p&gt;So now nobody knows if it&amp;#39;s been fixed. Maybe Kat fixed it but hasn&amp;#39;t committed it yet. Maybe she&amp;#39;s halfway fixed it. Maybe she gave it to someone else in the company.&lt;/p&gt;
+
+&lt;p&gt;Enter the infomercial voiceover. &amp;quot;If you&amp;#39;ve ever had problems like these... Try issue tracking! &lt;small&gt;May cause heart problems or temporary insanity. See your doctor for details.&lt;/small&gt;&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;This is what issue tracking is for, and the in-class projects are (so far) a poor representation of that.&lt;/p&gt;
+
+&lt;p&gt;Note that I&amp;#39;m not espousing any particular way that I think issue tracking should be taught. I think it is impractical for everyone to learn on the job. I have long thought that programming should be taught via a single, large, open-source project. You are graded based on your contributions. End of story.&lt;/p&gt;
+
+&lt;p&gt;Tip of the week: Know the &amp;quot;bus factor&amp;quot;: It&amp;#39;s the number of people that can be hit by a bus before the project fails. A larger number is better. That way, no one person is in charge of too much - if the bus factor is 1 or 2 in a large company (&amp;gt;20 people), then maybe their job encompasses too much.&lt;/p&gt;
+
+&lt;p&gt;As always, assume the buses are smart and malicious.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;busfactor.jpg&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Sep 2015 00:00:00 -0500</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/09/06/hotels.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/09/06/hotels.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>First Post</title>

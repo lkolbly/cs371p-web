@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Collatz Algorithm</title>
+  <meta name="description" content="First off, shameless plug. Fill out the XKCD survey if you haven&#39;t already:[https://docs.google.com/forms/d/1PhEmGqYI84n6WmqifWf8ExLNe3EVBLcBPs1owYXWfPs/...">
+
+  <link rel="stylesheet" href="/cs371p-web/css/main.css">
+  <link rel="canonical" href="http://lkolbly.github.io/cs371p-web/2015/09/06/hotels.html">
+  <link rel="alternate" type="application/rss+xml" title="CS371p Fall 2015: Lane Kolbly" href="http://lkolbly.github.io/cs371p-web/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/cs371p-web/">Home</a>
+        
+          
+          <a class="page-link" href="/cs371p-web/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">The Collatz Algorithm</h1>
+     <p class="post-meta">Posted on Sep 6, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>First off, shameless plug. Fill out the XKCD survey if you haven&#39;t already:
+[<a href="https://docs.google.com/forms/d/1PhEmGqYI84n6WmqifWf8ExLNe3EVBLcBPs1owYXWfPs/viewform?c=0&amp;w=1">https://docs.google.com/forms/d/1PhEmGqYI84n6WmqifWf8ExLNe3EVBLcBPs1owYXWfPs/viewform?c=0&amp;w=1</a>]</p>
+
+<p>Week two of my experience in CS371p (Object Oriented Programming). This week we started our first project, a program to find the longest Collatz chain within a range of numbers.</p>
+
+<p>Not a difficult problem to solve by any stretch of the word.</p>
+
+<p>But the difficulty in the project lies not in the programming. It lies in the paperwork around the project that we have to do. The goal of this class is not to learn object oriented programming, but to learn the tools of the trade: Git, continuous integration, unit tests, issue tracking, and so forth.</p>
+
+<p>I don&#39;t know what the right way to teach these things is. I personally learned them through using them - I went to work at a company. The company used tool XYZ. I learned tool XYZ. I learned Git at WP Engine. I learned testing at Click Security (despite what they may tell you). Even though L5 proved beyond a doubt that freelancing was not what I was meant for, I learned many valuable lessons there about ethics and timekeeping and tests and documentation etc.</p>
+
+<p>In each of these cases, though, I was in the real world using the tools. I learned how to use issue tracking in a world where we had to track thousands of issues at the same time quickly and efficiently or else the company would fold under its own weight.</p>
+
+<p>The class attempts to teach issue tracking by forcing us to use an issue tracker. Naively, you might think that&#39;s great. But we&#39;re forced to file a certain number of issues, on a project which we&#39;re working alone on. Issue trackers are not built to track issues, tracking issues is easy and any programmer worth giving a keyboard knows how to keep a TODO list of issues. I personally use a text file, some use post-it notes. Some use an issue tracker for that, there&#39;s nothing wrong with that.</p>
+
+<p>But let&#39;s be honest, it takes about a second to learn how to use the Github issue tracker.</p>
+
+<p>The real power of issue tracking is in coordinating people. Imagine you work in a company of about 120-130 people. There are maybe a half-dozen technical teams at said company. Now imagine you are working on a problem where people with Italian names don&#39;t appear in the final product. (by the way, the product consists of a data pipeline where data is piped from the customer, through machinery, and then gets moved to the product team&#39;s territory) You are the person responsible for fixing the problem. What do you do?</p>
+
+<p>You probably try to identify the problem in the part you have control over, the data pipeline. You look through it, make some notes, and then posit that it is a problem with the product team. So you go over to Jill&#39;s desk and tell her, &quot;Hey, I&#39;ve been working on bug XYZ.&quot; You tell her what you know, she writes it on a post-it, and you part ways as happy workfellows.</p>
+
+<p>A couple weeks later, maybe it&#39;s on a Wednesday and the company catered BBQ that day. You sit down to your ribs, and Greg sits down across from you and asks, &quot;Hey, so is bug XYZ fixed?&quot;</p>
+
+<p>You reply, &quot;Dude, I&#39;m eating BBQ, buzz off.&quot;</p>
+
+<p>Just kidding. You reply, &quot;I don&#39;t know, I gave that to Jill.&quot;</p>
+
+<p>Greg thanks you and goes to Jill. Jill says she gave it to Jimbo. Jimbo gave it to Kat. Kat got married last weekend and will be off the grid on her honeymoon until late next week.</p>
+
+<p>So now nobody knows if it&#39;s been fixed. Maybe Kat fixed it but hasn&#39;t committed it yet. Maybe she&#39;s halfway fixed it. Maybe she gave it to someone else in the company.</p>
+
+<p>Enter the infomercial voiceover. &quot;If you&#39;ve ever had problems like these... Try issue tracking! <small>May cause heart problems or temporary insanity. See your doctor for details.</small>&quot;</p>
+
+<p>This is what issue tracking is for, and the in-class projects are (so far) a poor representation of that.</p>
+
+<p>Note that I&#39;m not espousing any particular way that I think issue tracking should be taught. I think it is impractical for everyone to learn on the job. I have long thought that programming should be taught via a single, large, open-source project. You are graded based on your contributions. End of story.</p>
+
+<p>Tip of the week: Know the &quot;bus factor&quot;: It&#39;s the number of people that can be hit by a bus before the project fails. A larger number is better. That way, no one person is in charge of too much - if the bus factor is 1 or 2 in a large company (&gt;20 people), then maybe their job encompasses too much.</p>
+
+<p>As always, assume the buses are smart and malicious.</p>
+
+<p><img src="busfactor.jpg" /></p>
+
+
+    <img src="/cs371p-web/lane.jpg" />
+    <p>This is an image of me doing what I do when I'm not at a computer.</p>
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Copyright &copy; <a href=http://diezcami.github.io target="_blank">Camille Diez</a> 2015<BR />
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+
+</div>
+
+
+  </body>
+</html>
