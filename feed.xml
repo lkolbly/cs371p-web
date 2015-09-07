@@ -6,8 +6,8 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Sep 2015 21:31:13 -0500</pubDate>
-    <lastBuildDate>Sun, 06 Sep 2015 21:31:13 -0500</lastBuildDate>
+    <pubDate>Sun, 06 Sep 2015 21:46:10 -0500</pubDate>
+    <lastBuildDate>Sun, 06 Sep 2015 21:46:10 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -53,7 +53,7 @@
 
 &lt;p&gt;As always, assume the buses are smart and malicious.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;busfactor.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/cs371p-web/busfactor.jpg&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Sep 2015 00:00:00 -0500</pubDate>
         <link>http://lkolbly.github.io/cs371p-web/2015/09/06/hotels.html</link>
