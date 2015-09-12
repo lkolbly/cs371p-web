@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Design: Not For The Weak Of Mind"
+title: "Control The Source, Luke."
 date: 2015-09-12
 categories:
 ---
