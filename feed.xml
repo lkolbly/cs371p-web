@@ -6,47 +6,23 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Sep 2015 14:16:15 -0500</pubDate>
-    <lastBuildDate>Sat, 12 Sep 2015 14:16:15 -0500</lastBuildDate>
+    <pubDate>Sat, 12 Sep 2015 16:21:18 -0500</pubDate>
+    <lastBuildDate>Sat, 12 Sep 2015 16:21:18 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Design: Not For The Weak Of Mind</title>
         <description>&lt;p&gt;We got Labor Day off this week, so we only had two classes. An alumni from UT who now works at Bloomberg came and gave a talk on Wednesday, so we really only had one class.&lt;/p&gt;
 
-&lt;p&gt;One thing that occurs in this class is that outside speakers are brought in to talk about life after UT. So on Wednesday we had an outside speaker who talked about his life at Bloomberg. He gave some tips about resumes and interviewing, so that was handy. Of course, the talk had a certain slant towards us applying to Bloomberg. It seems like a nice place, but I&amp;#39;m not sure NYC is cut out for me. They probably have tighter UAV laws - Austin has plenty of schools which will let you fly UAVs on them, so maybe this summer I&amp;#39;m going to stay in Austin again.&lt;/p&gt;
+&lt;p&gt;I only had two classes last week as well, but that&amp;#39;s because I was in Virginia. Everyone else (give or take) had three classes.&lt;/p&gt;
 
-&lt;p&gt;Friday, on the other hand, was essentially a survey class of things that are wrong with C++. One such issue with C++ is passing by reference. We really only touched on it tangentally when talking about exceptions, but here&amp;#39;s my problem with pass-by-reference. Examine the following piece of code:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Integer a = 1;
-Integer b = 2;
-a.setMax(b);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now, a simple question. What is a after this snippet of code runs?&lt;/p&gt;
+&lt;p&gt;One thing that occurs in this class is that outside speakers are brought in to talk about life after UT. So on Wednesday we had an outside speaker who talked about his life at Bloomberg. He gave some tips about resumes and interviewing, so that was handy. Of course, the talk had a certain slant towards us applying to Bloomberg. It seems like a nice place, but I&amp;#39;m not sure NYC is cut out for me. They probably have tighter UAV laws - Austin has plenty of open fields which will let you fly UAVs on them, so maybe this summer I&amp;#39;m going to stay in Austin again.&lt;/p&gt;
 
-&lt;p&gt;You might initially think, well, it&amp;#39;s 2. But that answer only comes from convention. Conventionally, a.setMax(b) changes a but not b.&lt;/p&gt;
+&lt;p&gt;We didn&amp;#39;t do much on Friday, we just talked about exceptions. We also mentioned pass-by-reference, but that is a rant that I will save for another (slower) day. I already have a rant for today.&lt;/p&gt;
 
-&lt;p&gt;But you don&amp;#39;t know that. Integer is in this case some 3rd party library - it wasn&amp;#39;t written by you, the reader, so you have to guess that the writer of Integer followed the same convention you follow.&lt;/p&gt;
+&lt;p&gt;We finished the Collatz project this week. I have little to say about the project that I haven&amp;#39;t said already: it tries to teach us tools by forcing us to use them without any rationale (see my prior rant on issue tracking).&lt;/p&gt;
 
-&lt;p&gt;The problem in this case is that setMax&amp;#39;s prototype is:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;void Integer::setMax(Integer &amp;amp;other);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;And there is ambiguity here. C++ has pointers, there is no reason not to use them:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;void Integer::setMax(Integer *other);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This disambiguates to the reader of the code both inside the function and outside where the variable &amp;quot;other&amp;quot; is stored - it is stored somewhere else, not on the local stack:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Integer a = 1;
-Integer b = 2;
-a.setMax(&amp;amp;b);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now it&amp;#39;s clear that, even if b is not changed, setMax() is allowed to change b. By adding the ampersand the programmer has given permission for setMax to change b. Otherwise, the programmer may not realize that b could be changed.&lt;/p&gt;
-
-&lt;p&gt;One could argue that this is a problem only with &amp;quot;poorly-written&amp;quot; libraries, which don&amp;#39;t follow the conventions. The counter-argument is that yes, that&amp;#39;s true, but you could just as well design the language to prevent such poorly-written libraries from existing.&lt;/p&gt;
-
-&lt;p&gt;As I mentioned, the class on Friday revolved more around exceptions than passing by reference. I have nothing against exceptions.&lt;/p&gt;
-
-&lt;p&gt;In other news, we finished the project this week. I have little to say about the project that I haven&amp;#39;t said already: it tries to teach us tools by forcing us to use them without any rationale (see my prior rant on issue tracking).&lt;/p&gt;
-
-&lt;p&gt;For instance, I believe that source control should be used to control source.&lt;/p&gt;
+&lt;p&gt;For instance, I believe that source control should be used to control source. It is not a tool to control built files.&lt;/p&gt;
 
 &lt;p&gt;Doxygen is a tool that generates documentation. The documentation comes from comments in the source code of files, and Doxygen can be controlled using a Doxyfile much like how make is controlled with a Makefile. Doxygen generates HTML documentation and plops it into a html/ directory.&lt;/p&gt;
 
@@ -54,21 +30,27 @@ a.setMax(&amp;amp;b);
 
 &lt;p&gt;But alas, the project requirements require us to commit the html directory and not the Doxyfile, even though we hand-modified the Doxyfile.&lt;/p&gt;
 
-&lt;p&gt;What&amp;#39;s the lesson we&amp;#39;re being taught? I don&amp;#39;t know. The rationale for these unusual requirements is that employers will need to know that prospective employees (i.e. us students) can pay attention to detail.&lt;/p&gt;
+&lt;p&gt;What&amp;#39;s the lesson we&amp;#39;re being taught? I don&amp;#39;t know. I hear people say that we are being taught valuable lessons that will apply to industry.&lt;/p&gt;
 
-&lt;p&gt;I&amp;#39;ve worked at a half-dozen different companies. Every single one valued employees speaking up about things like this more than a blind ambition to stick to requirements.&lt;/p&gt;
+&lt;p&gt;But let&amp;#39;s be frank - if I were an employer, I would rather hire someone who knows the git commands but commits binary files and random log files than someone who had never heard of git but was able to learn. It doesn&amp;#39;t take much time to pick it up. Everyone in this class picked it up in the span of a week (or dropped the class).&lt;/p&gt;
 
 &lt;p&gt;Which brings me to...&lt;/p&gt;
 
-&lt;p&gt;Tip of the Week: Don&amp;#39;t blindly use git add -A before every commit. You will eventually grab all manner of binary files, temporary log files, test files, editor scratch files, and so forth. When you do grab those files, you inconvenience everyone else.&lt;/p&gt;
+&lt;p&gt;Tip of the Week: Don&amp;#39;t blindly use git add -A before every commit. You will eventually grab all manner of binary files, temporary log files, test files, editor scratch files, and so forth. When you do eventually grab those files, you inconvenience everyone else.&lt;/p&gt;
 
 &lt;p&gt;Story time: In Spring of 2015 I had Dr. Rellermeyer for Operating Systems. There was a big final project for the second half of the semester, which was to build an operating system that would run on an ARM chip (Raspberry Pi, in particular).&lt;/p&gt;
 
-&lt;p&gt;That project was in my opinion how projects should be done. We were essentially a pretend company - Dr. Rellermeyer was a customer, who said &amp;quot;I need an OS that can run a binary&amp;quot;. The rest of us self-organized to accomplish that goal, like any real-world company.&lt;/p&gt;
+&lt;p&gt;That project was in my opinion how projects should be done. We were essentially a pretend company - Dr. Rellermeyer was a customer, who said &amp;quot;I need an OS that can run a binary&amp;quot;. The rest of us self-organized to accomplish that goal, like any real-world company*.&lt;/p&gt;
 
 &lt;p&gt;There were two dozen of us, all frantically compiling the code and trying to get it to work. One day somebody accidentally pushed the binary executable and 20MB of log file. For the next week, everybody got a nasty case of merge hell, because the binary changes on every commit. On top of that, they would overwrite their own binary whenever they pulled from the repo, and then spend forever trying to figure out why their code didn&amp;#39;t seem to be running.&lt;/p&gt;
 
-&lt;p&gt;Moral of the story: Add only files you know about.&lt;/p&gt;
+&lt;p&gt;To rub salt in the wound, ever since the repo takes roughly forever to pull.&lt;/p&gt;
+
+&lt;p&gt;Moral of the story: If you didn&amp;#39;t add or remove any files in your commit, don&amp;#39;t run git add -A. git add individual files, or use git commit -am&amp;quot;commit message&amp;quot;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I guess real-world companies usually start with 1 or 2 people and add more, rather than starting unorganized with 20 people, but maybe we&amp;#39;re talking about a company that had grown to ~100 people and ~20 interns before smart buses eliminated everyone who wasn&amp;#39;t a fresh intern.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sat, 12 Sep 2015 00:00:00 -0500</pubDate>
         <link>http://lkolbly.github.io/cs371p-web/2015/09/12/projects.html</link>
