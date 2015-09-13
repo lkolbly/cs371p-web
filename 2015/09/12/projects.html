@@ -78,7 +78,7 @@
 
 <p>What&#39;s the lesson we&#39;re being taught? I don&#39;t know. I hear people say that we are being taught valuable lessons that will apply to industry.</p>
 
-<p>But let&#39;s be frank - if I were an employer, I would rather hire someone who knows the git commands but commits binary files and random log files than someone who had never heard of git but was able to learn. It doesn&#39;t take much time to pick it up. Everyone in this class picked it up in the span of a week (or dropped the class).</p>
+<p>To be honest, if I were an employer, I would rather hire someone who had never heard of git but was able to learn than someone who knows the git commands but commits binary files and random log files. It doesn&#39;t take much time to pick it up. Everyone in this class picked it up in the span of a week (or dropped the class).</p>
 
 <p>Which brings me to...</p>
 
@@ -86,17 +86,17 @@
 
 <p>Story time: In Spring of 2015 I had Dr. Rellermeyer for Operating Systems. There was a big final project for the second half of the semester, which was to build an operating system that would run on an ARM chip (Raspberry Pi, in particular).</p>
 
-<p>That project was in my opinion how projects should be done. We were essentially a pretend company - Dr. Rellermeyer was a customer, who said &quot;I need an OS that can run a binary&quot;. The rest of us self-organized to accomplish that goal, like any real-world company*.</p>
+<p>That project was unlike any other class project. We were essentially a pretend company - Dr. Rellermeyer was a customer, who said &quot;I need an OS that can run a binary&quot;. The rest of us self-organized to accomplish that goal, like any real-world company [1].</p>
 
-<p>There were two dozen of us, all frantically compiling the code and trying to get it to work. One day somebody accidentally pushed the binary executable and 20MB of log file. For the next week, everybody got a nasty case of merge hell, because the binary changes on every commit. On top of that, they would overwrite their own binary whenever they pulled from the repo, and then spend forever trying to figure out why their code didn&#39;t seem to be running.</p>
+<p>There were two dozen of us working on the project, all frantically compiling the code and trying to get it to work. One day somebody accidentally pushed the binary executable and 20MB of log file. For the next week, everybody got a nasty case of merge hell, because the binary changes on every commit. On top of that, they would overwrite their own binary whenever they pulled from the repo, and then spend forever trying to figure out why their code didn&#39;t seem to be running.</p>
 
 <p>To rub salt in the wound, ever since the repo takes roughly forever to pull.</p>
 
+<p>I think eventually someone got around to rebasing it, but rebasing public history is nothing but pain.</p>
+
 <p>Moral of the story: If you didn&#39;t add or remove any files in your commit, don&#39;t run git add -A. git add individual files, or use git commit -am&quot;commit message&quot;.</p>
 
-<ul>
-<li>I guess real-world companies usually start with 1 or 2 people and add more, rather than starting unorganized with 20 people, but maybe we&#39;re talking about a company that had grown to ~100 people and ~20 interns before smart buses eliminated everyone who wasn&#39;t a fresh intern.</li>
-</ul>
+<p>[1] I guess real-world companies usually start with 1 or 2 people and add more, rather than starting unorganized with 20 people, but maybe we&#39;re talking about a company that had grown to ~100 people and ~20 interns before smart buses eliminated everyone who wasn&#39;t a fresh intern.</p>
 
 
     <img src="/cs371p-web/lane.jpg" />

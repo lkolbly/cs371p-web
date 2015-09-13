@@ -6,8 +6,8 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Sep 2015 16:25:03 -0500</pubDate>
-    <lastBuildDate>Sat, 12 Sep 2015 16:25:03 -0500</lastBuildDate>
+    <pubDate>Sat, 12 Sep 2015 22:31:09 -0500</pubDate>
+    <lastBuildDate>Sat, 12 Sep 2015 22:31:09 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -32,7 +32,7 @@
 
 &lt;p&gt;What&amp;#39;s the lesson we&amp;#39;re being taught? I don&amp;#39;t know. I hear people say that we are being taught valuable lessons that will apply to industry.&lt;/p&gt;
 
-&lt;p&gt;But let&amp;#39;s be frank - if I were an employer, I would rather hire someone who knows the git commands but commits binary files and random log files than someone who had never heard of git but was able to learn. It doesn&amp;#39;t take much time to pick it up. Everyone in this class picked it up in the span of a week (or dropped the class).&lt;/p&gt;
+&lt;p&gt;To be honest, if I were an employer, I would rather hire someone who had never heard of git but was able to learn than someone who knows the git commands but commits binary files and random log files. It doesn&amp;#39;t take much time to pick it up. Everyone in this class picked it up in the span of a week (or dropped the class).&lt;/p&gt;
 
 &lt;p&gt;Which brings me to...&lt;/p&gt;
 
@@ -40,17 +40,17 @@
 
 &lt;p&gt;Story time: In Spring of 2015 I had Dr. Rellermeyer for Operating Systems. There was a big final project for the second half of the semester, which was to build an operating system that would run on an ARM chip (Raspberry Pi, in particular).&lt;/p&gt;
 
-&lt;p&gt;That project was in my opinion how projects should be done. We were essentially a pretend company - Dr. Rellermeyer was a customer, who said &amp;quot;I need an OS that can run a binary&amp;quot;. The rest of us self-organized to accomplish that goal, like any real-world company*.&lt;/p&gt;
+&lt;p&gt;That project was unlike any other class project. We were essentially a pretend company - Dr. Rellermeyer was a customer, who said &amp;quot;I need an OS that can run a binary&amp;quot;. The rest of us self-organized to accomplish that goal, like any real-world company [1].&lt;/p&gt;
 
-&lt;p&gt;There were two dozen of us, all frantically compiling the code and trying to get it to work. One day somebody accidentally pushed the binary executable and 20MB of log file. For the next week, everybody got a nasty case of merge hell, because the binary changes on every commit. On top of that, they would overwrite their own binary whenever they pulled from the repo, and then spend forever trying to figure out why their code didn&amp;#39;t seem to be running.&lt;/p&gt;
+&lt;p&gt;There were two dozen of us working on the project, all frantically compiling the code and trying to get it to work. One day somebody accidentally pushed the binary executable and 20MB of log file. For the next week, everybody got a nasty case of merge hell, because the binary changes on every commit. On top of that, they would overwrite their own binary whenever they pulled from the repo, and then spend forever trying to figure out why their code didn&amp;#39;t seem to be running.&lt;/p&gt;
 
 &lt;p&gt;To rub salt in the wound, ever since the repo takes roughly forever to pull.&lt;/p&gt;
 
+&lt;p&gt;I think eventually someone got around to rebasing it, but rebasing public history is nothing but pain.&lt;/p&gt;
+
 &lt;p&gt;Moral of the story: If you didn&amp;#39;t add or remove any files in your commit, don&amp;#39;t run git add -A. git add individual files, or use git commit -am&amp;quot;commit message&amp;quot;.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;I guess real-world companies usually start with 1 or 2 people and add more, rather than starting unorganized with 20 people, but maybe we&amp;#39;re talking about a company that had grown to ~100 people and ~20 interns before smart buses eliminated everyone who wasn&amp;#39;t a fresh intern.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;[1] I guess real-world companies usually start with 1 or 2 people and add more, rather than starting unorganized with 20 people, but maybe we&amp;#39;re talking about a company that had grown to ~100 people and ~20 interns before smart buses eliminated everyone who wasn&amp;#39;t a fresh intern.&lt;/p&gt;
 </description>
         <pubDate>Sat, 12 Sep 2015 00:00:00 -0500</pubDate>
         <link>http://lkolbly.github.io/cs371p-web/2015/09/12/projects.html</link>
