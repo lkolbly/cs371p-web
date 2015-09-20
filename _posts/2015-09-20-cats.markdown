@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Hot, or Not?"
+date: 2015-09-20
+categories:
+---
+This week we got our second project, and our first pair project. The goal of the project is to implement Range voting, which is what's used on the "Hot or Not" website.
+
+As week 4 draws to a close, I realize that the class won't change drastically enough for me to have much to say about it. I'm still on the fence about whether I would recommend this class (which is the point of this blog - to give my impression of the class).
+
+Today, I will talk about those online programming challenge websites. I have never been a fan of these, especially with the open-loop debugging style where the website says "you have a bug!" but doesn't tell you what triggered it. On top of that, I have never been impressed by the challenges that they offer - many I find trivial to implement, let alone being a challenge.
+
+There are two exceptions to this, though. One is [USACO](http://www.usaco.org/), the other is [Project Euler](https://projecteuler.net/archives).
+
+USACO has the property that they stress good algorithm design - your algorithm has to be the most efficient, or else you will time out. Take the Voting project for example - the input is limited to 20 candidates and 1000 ballots. Your algorithm could be exponential time in the number of candidates without the program timing out.
+
+I was never any good at USACO because of this. I have the bad habit of writing code that works. This is a terrible habit to get into, for the reason above: I don't pay attention to the quality of the algorithm. I frankly don't care whether our submission to the Voting project is exponential in the number of candidates. But I should care deeply. USACO was the first place I encountered where I had to care or lose.
+
+Typically I lost anyway, but that's beside the point.
+
+The other one is Project Euler, which is the same thing but for math rather than programming. Full disclosure: I've only done one or two of the easiest problems. Point is, both require you to think beyond the mechanics of the code to the strategy. We've all been programming for at least a year (assuming you didn't take 312, took 314 a year ago, and took 429 last semester), code mechanics shouldn't be the focus. Algorithms should be.
+
+Incidentally, I'm also taking CS 331, "Algorithms Design & Complexity", this semester.
+
+Consejo de la Semana: Know the problem domain. I'm taking Embedded Systems Development this semester. One of our projects is to build an accurate stopwatch, controlled over a serial console. The instinctive route is to use a hardware timer, but it turns out that the best route is to simply time the device and tweak cycle counts. Programming embedded requires an appropriate mindset, as does programming for the web or local machines or anything else.
+
+Much like the example above with USACO. On USACO you have to be keenly aware of time constraints. Less so with some arbitrary class project.
+
+A classmate of mine posted a link to an article Joel Spolsky wrote about this:
+[http://www.joelonsoftware.com/articles/FiveWorlds.html]
