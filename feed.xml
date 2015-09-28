@@ -6,9 +6,67 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Sep 2015 21:56:16 -0500</pubDate>
-    <lastBuildDate>Sun, 27 Sep 2015 21:56:16 -0500</lastBuildDate>
+    <pubDate>Sun, 27 Sep 2015 22:02:11 -0500</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2015 22:02:11 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Sillyscopes!</title>
+        <description>&lt;p&gt;Our good friend Glenn Downing (who also happens to teach this class) read my previous post on this blog and pointed to:
+[&lt;a href=&quot;http://codeforces.com&quot;&gt;http://codeforces.com&lt;/a&gt;]
+and
+[&lt;a href=&quot;https://www.hackerrank.com&quot;&gt;https://www.hackerrank.com&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;He teaches a competitive programming course which uses codeforces.com, and that website looked pretty cool.&lt;/p&gt;
+
+&lt;p&gt;We venture forward to this most recent week. This week we got our running grades for the semester back.&lt;/p&gt;
+
+&lt;p&gt;Most classes would give you just a single number, your average score. That number usually ends up being meaningless anyways because they&amp;#39;re averaged poorly or because of curves.&lt;/p&gt;
+
+&lt;p&gt;In this class we got not only our points, but our Z-score in the class (standard deviations above or below the mean) as well as our class rank.&lt;/p&gt;
+
+&lt;p&gt;There are 78 people who are better than me. It was 77 this morning, but then someone got another point or something. Oddly there weren&amp;#39;t any grades entered, that I&amp;#39;m aware of. Perhaps it was a I&amp;#39;ll-bake-cookies-for-you-if-you-bump-my-grade type of thing.&lt;/p&gt;
+
+&lt;p&gt;I must retaliate with a baker of my own. I choose you, sister!&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m just kidding, I don&amp;#39;t actually think there&amp;#39;s any corruption in this class, depending on how you define &amp;quot;corruption&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;This is a class where the rich get richer, and the poor get poorer, because the rich prey on the poor.&lt;/p&gt;
+
+&lt;p&gt;There are those who can write beautiful code right out of the box. Their code is modular, short, relatively clear, and works. When they write test cases, they cover the corners. Their code is bullet-proof.&lt;/p&gt;
+
+&lt;p&gt;Then there are those who... maybe aren&amp;#39;t quite there yet. Their code is cobbled together and has a few bugs. Maybe they didn&amp;#39;t quite think of everything in their tests.&lt;/p&gt;
+
+&lt;p&gt;This class has a system where your program is run against the acceptance test of a randomly chosen student. If your program fails, you lose two points and they gain two points. This is repeated 5 times (you can lose or gain up to 10 points).&lt;/p&gt;
+
+&lt;p&gt;The people at the top will be more likely to get points than those at the bottom. This is fine, but it&amp;#39;s very cutthroat (which is why I dislike competitive programming).&lt;/p&gt;
+
+&lt;p&gt;I got two points from this system. I like having more points. But along the way I put down 5 people (1 person lost 2 points because of me, and I passed ~4 people in the class rank).&lt;/p&gt;
+
+&lt;p&gt;I am ambivalent about this. I thought you, prospective student of CS 371p, should know how things work.&lt;/p&gt;
+
+&lt;p&gt;Tip of the Week: Keep track of why you do things.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m in CS378 Embedded Systems with Dr. Oshana, which is the best class ever and you should totally ditch OOP and go for it [1], but this week we&amp;#39;re doing a project wherein we have to write a command line interpreter for an embedded system (via UART). Somebody on the class discussion forum was getting an error code which I vaguely recognized. I looked at what I had done and noticed this line:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;         console_printf(&amp;quot;%s &amp;quot;, g_command_line.prompt);
+-    } else if (c == &amp;#39;\b&amp;#39;) {
++    } else if (c == &amp;#39;\b&amp;#39; || c == 127) {
+        if (g_command_line.buffer_cursor &amp;gt; g_command_line.buffer) {
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So I must have changed something about backslash. But for the life of me, I don&amp;#39;t remember what I changed or why.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;#39;s no use to anybody else.&lt;/p&gt;
+
+&lt;p&gt;So, use version control and issue tracking. It&amp;#39;ll save you from having to remember.&lt;/p&gt;
+
+&lt;p&gt;[1] I might be biased because I like C and robots and I don&amp;#39;t like C++. One class has C and robots (well, a smart car) and the other has C++. My biases should be obvious.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Sep 2015 00:00:00 -0500</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/09/26/sillyscopes.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/09/26/sillyscopes.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Hot, or Not?</title>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sillyscopes!</title>
+  <meta name="description" content="Our good friend Glenn Downing (who also happens to teach this class) read my previous post on this blog and pointed to:[http://codeforces.com]and[https://www...">
+
+  <link rel="stylesheet" href="/cs371p-web/css/main.css">
+  <link rel="canonical" href="http://lkolbly.github.io/cs371p-web/2015/09/26/sillyscopes.html">
+  <link rel="alternate" type="application/rss+xml" title="CS371p Fall 2015: Lane Kolbly" href="http://lkolbly.github.io/cs371p-web/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/cs371p-web/">Home</a>
+        
+          
+          <a class="page-link" href="/cs371p-web/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">Sillyscopes!</h1>
+     <p class="post-meta">Posted on Sep 26, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>Our good friend Glenn Downing (who also happens to teach this class) read my previous post on this blog and pointed to:
+[<a href="http://codeforces.com">http://codeforces.com</a>]
+and
+[<a href="https://www.hackerrank.com">https://www.hackerrank.com</a>]</p>
+
+<p>He teaches a competitive programming course which uses codeforces.com, and that website looked pretty cool.</p>
+
+<p>We venture forward to this most recent week. This week we got our running grades for the semester back.</p>
+
+<p>Most classes would give you just a single number, your average score. That number usually ends up being meaningless anyways because they&#39;re averaged poorly or because of curves.</p>
+
+<p>In this class we got not only our points, but our Z-score in the class (standard deviations above or below the mean) as well as our class rank.</p>
+
+<p>There are 78 people who are better than me. It was 77 this morning, but then someone got another point or something. Oddly there weren&#39;t any grades entered, that I&#39;m aware of. Perhaps it was a I&#39;ll-bake-cookies-for-you-if-you-bump-my-grade type of thing.</p>
+
+<p>I must retaliate with a baker of my own. I choose you, sister!</p>
+
+<p>I&#39;m just kidding, I don&#39;t actually think there&#39;s any corruption in this class, depending on how you define &quot;corruption&quot;.</p>
+
+<p>This is a class where the rich get richer, and the poor get poorer, because the rich prey on the poor.</p>
+
+<p>There are those who can write beautiful code right out of the box. Their code is modular, short, relatively clear, and works. When they write test cases, they cover the corners. Their code is bullet-proof.</p>
+
+<p>Then there are those who... maybe aren&#39;t quite there yet. Their code is cobbled together and has a few bugs. Maybe they didn&#39;t quite think of everything in their tests.</p>
+
+<p>This class has a system where your program is run against the acceptance test of a randomly chosen student. If your program fails, you lose two points and they gain two points. This is repeated 5 times (you can lose or gain up to 10 points).</p>
+
+<p>The people at the top will be more likely to get points than those at the bottom. This is fine, but it&#39;s very cutthroat (which is why I dislike competitive programming).</p>
+
+<p>I got two points from this system. I like having more points. But along the way I put down 5 people (1 person lost 2 points because of me, and I passed ~4 people in the class rank).</p>
+
+<p>I am ambivalent about this. I thought you, prospective student of CS 371p, should know how things work.</p>
+
+<p>Tip of the Week: Keep track of why you do things.</p>
+
+<p>I&#39;m in CS378 Embedded Systems with Dr. Oshana, which is the best class ever and you should totally ditch OOP and go for it [1], but this week we&#39;re doing a project wherein we have to write a command line interpreter for an embedded system (via UART). Somebody on the class discussion forum was getting an error code which I vaguely recognized. I looked at what I had done and noticed this line:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">         console_printf(&quot;%s &quot;, g_command_line.prompt);
+-    } else if (c == &#39;\b&#39;) {
++    } else if (c == &#39;\b&#39; || c == 127) {
+        if (g_command_line.buffer_cursor &gt; g_command_line.buffer) {
+</code></pre></div>
+<p>So I must have changed something about backslash. But for the life of me, I don&#39;t remember what I changed or why.</p>
+
+<p>And that&#39;s no use to anybody else.</p>
+
+<p>So, use version control and issue tracking. It&#39;ll save you from having to remember.</p>
+
+<p>[1] I might be biased because I like C and robots and I don&#39;t like C++. One class has C and robots (well, a smart car) and the other has C++. My biases should be obvious.</p>
+
+
+    <img src="/cs371p-web/lane.jpg" />
+    <p>This is an image of me doing what I do when I'm not at a computer.</p>
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Copyright &copy; <a href=http://diezcami.github.io target="_blank">Camille Diez</a> 2015<BR />
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+
+</div>
+
+
+  </body>
+</html>
