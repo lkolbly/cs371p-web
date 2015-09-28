@@ -17,11 +17,7 @@ Most classes would give you just a single number, your average score. That numbe
 
 In this class we got not only our points, but our Z-score in the class (standard deviations above or below the mean) as well as our class rank.
 
-There are 78 people who are better than me. It was 77 this morning, but then someone got another point or something. Oddly there weren't any grades entered, that I'm aware of. Perhaps it was a I'll-bake-cookies-for-you-if-you-bump-my-grade type of thing.
-
-I must retaliate with a baker of my own. I choose you, sister!
-
-I'm just kidding, I don't actually think there's any corruption in this class, depending on how you define "corruption".
+There are 78 people who are better than me. It was 77 this morning, but then someone got another point or something. Oddly there weren't any grades entered, that I'm aware of. One wonders.
 
 This is a class where the rich get richer, and the poor get poorer, because the rich prey on the poor.
 
@@ -35,7 +31,7 @@ The people at the top will be more likely to get points than those at the bottom
 
 I got two points from this system. I like having more points. But along the way I put down 5 people (1 person lost 2 points because of me, and I passed ~4 people in the class rank).
 
-I am ambivalent about this. I thought you, prospective student of CS 371p, should know how things work.
+Personally, I feel like directly transferring points from worse students to better students works against the goal. The goal is for everyone to learn - and ideally everyone helps everyone learn. With this point system now we have a reason to not help (nay, mislead) our fellow students. With a class this big (~170 people), people are faceless and it's hard to feel guilty.
 
 Tip of the Week: Keep track of why you do things.
 
