@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Minority Report</title>
+  <meta name="description" content="The creator of C++ (Bjarne Stroustrup) once said: &quot;There are only two kinds of languages: the ones people complain about and the ones nobody uses.&quot;">
+
+  <link rel="stylesheet" href="/cs371p-web/css/main.css">
+  <link rel="canonical" href="http://lkolbly.github.io/cs371p-web/2015/10/04/interface.html">
+  <link rel="alternate" type="application/rss+xml" title="CS371p Fall 2015: Lane Kolbly" href="http://lkolbly.github.io/cs371p-web/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/cs371p-web/">Home</a>
+        
+          
+          <a class="page-link" href="/cs371p-web/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">The Minority Report</h1>
+     <p class="post-meta">Posted on Oct 4, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>The creator of C++ (Bjarne Stroustrup) once said: &quot;There are only two kinds of languages: the ones people complain about and the ones nobody uses.&quot;</p>
+
+<p>This week we covered more about templates and we started covering lambda functions.</p>
+
+<p>I personally like lambda functions. Sometimes, it is handy to have a full function that you can toss around to different functions. The C++ standard library&#39;s accumulat() and all_of() functions both take a function as a parameter. In a language like Python that lambda would be restricted to a single statement, and scoping becomes a little less clear. C++ fixes these problems and allows arbitrarily sized lambdas with clearly scoped variables.</p>
+
+<p>Unfortunately, lambdas went the way of templates, and maybe could&#39;ve had a little more thought put into them:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#include &lt;iostream&gt;
+#include &lt;functional&gt;
+
+using namespace std;
+
+function&lt;int(int)&gt; foo()
+{
+  int i = 2;
+  return [&amp;i] (int x) -&gt; int {return i+x+1;};
+}
+
+int main(int argc, char **argv)
+{
+  function&lt;int(int)&gt; fn = foo();
+  cout &lt;&lt; fn(5) &lt;&lt; endl;
+  return 0;
+}
+</code></pre></div>
+<p>Prints out 6 on my machine. There are many camps on language design. The camp I belong to believes that the language should protect the coder in a case like this, using what JavaScript does with closures or Python with reference counting.</p>
+
+<p>This blog is about the class, not the language, so I shall tie it together: This class is making me think about language design more than any other class I&#39;ve taken. I don&#39;t like C++. But the professor makes an argument for it, and it makes me think hard about what it is that I like and don&#39;t like in languages.</p>
+
+<p>This is one thing I like about this class. It makes you to think.</p>
+
+<p>Tip of the Week: Have experience writing big projects from scratch (&gt;2000 lines, and multiple files). Most classes value good code but don&#39;t teach architecture, but having a good architecture is more important. Good architecture leads to good code. Bad architecture leads to code that has to work around the program it&#39;s living in, and it becomes more of a headache the further you get down the line.</p>
+
+
+    <img src="/cs371p-web/lane.jpg" />
+    <p>This is an image of me doing what I do when I'm not at a computer.</p>
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Copyright &copy; <a href=http://diezcami.github.io target="_blank">Camille Diez</a> 2015<BR />
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+
+</div>
+
+
+  </body>
+</html>

@@ -6,9 +6,51 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Sep 2015 22:07:05 -0500</pubDate>
-    <lastBuildDate>Sun, 27 Sep 2015 22:07:05 -0500</lastBuildDate>
+    <pubDate>Sun, 04 Oct 2015 12:21:11 -0500</pubDate>
+    <lastBuildDate>Sun, 04 Oct 2015 12:21:11 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>The Minority Report</title>
+        <description>&lt;p&gt;The creator of C++ (Bjarne Stroustrup) once said: &amp;quot;There are only two kinds of languages: the ones people complain about and the ones nobody uses.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;This week we covered more about templates and we started covering lambda functions.&lt;/p&gt;
+
+&lt;p&gt;I personally like lambda functions. Sometimes, it is handy to have a full function that you can toss around to different functions. The C++ standard library&amp;#39;s accumulat() and all_of() functions both take a function as a parameter. In a language like Python that lambda would be restricted to a single statement, and scoping becomes a little less clear. C++ fixes these problems and allows arbitrarily sized lambdas with clearly scoped variables.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, lambdas went the way of templates, and maybe could&amp;#39;ve had a little more thought put into them:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;functional&amp;gt;
+
+using namespace std;
+
+function&amp;lt;int(int)&amp;gt; foo()
+{
+  int i = 2;
+  return [&amp;amp;i] (int x) -&amp;gt; int {return i+x+1;};
+}
+
+int main(int argc, char **argv)
+{
+  function&amp;lt;int(int)&amp;gt; fn = foo();
+  cout &amp;lt;&amp;lt; fn(5) &amp;lt;&amp;lt; endl;
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Prints out 6 on my machine. There are many camps on language design. The camp I belong to believes that the language should protect the coder in a case like this, using what JavaScript does with closures or Python with reference counting.&lt;/p&gt;
+
+&lt;p&gt;This blog is about the class, not the language, so I shall tie it together: This class is making me think about language design more than any other class I&amp;#39;ve taken. I don&amp;#39;t like C++. But the professor makes an argument for it, and it makes me think hard about what it is that I like and don&amp;#39;t like in languages.&lt;/p&gt;
+
+&lt;p&gt;This is one thing I like about this class. It makes you to think.&lt;/p&gt;
+
+&lt;p&gt;Tip of the Week: Have experience writing big projects from scratch (&amp;gt;2000 lines, and multiple files). Most classes value good code but don&amp;#39;t teach architecture, but having a good architecture is more important. Good architecture leads to good code. Bad architecture leads to code that has to work around the program it&amp;#39;s living in, and it becomes more of a headache the further you get down the line.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 04 Oct 2015 00:00:00 -0500</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/10/04/interface.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/10/04/interface.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Sillyscopes!</title>
