@@ -36,4 +36,6 @@ Prints out 6 on my machine. There are many camps on language design. The camp I 
 
 This blog is about the class, not the language, so I shall tie it together: This class is making me think about language design more than any other class I've taken. I don't like C++. But the professor makes an argument for it, and it makes me think hard about what it is that I like and don't like in languages.
 
+This is one thing I like about this class. It makes you to think.
+
 Tip of the Week: Have experience writing big projects from scratch (>2000 lines, and multiple files). Most classes value good code but don't teach architecture, but having a good architecture is more important. Good architecture leads to good code. Bad architecture leads to code that has to work around the program it's living in, and it becomes more of a headache the further you get down the line.
