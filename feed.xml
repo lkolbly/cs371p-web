@@ -6,9 +6,40 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Oct 2015 12:21:11 -0500</pubDate>
-    <lastBuildDate>Sun, 04 Oct 2015 12:21:11 -0500</lastBuildDate>
+    <pubDate>Sat, 10 Oct 2015 19:01:18 -0500</pubDate>
+    <lastBuildDate>Sat, 10 Oct 2015 19:01:18 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Check, 1, 2, 3...</title>
+        <description>&lt;p&gt;A few things of importance happened this week: We had the first test.&lt;/p&gt;
+
+&lt;p&gt;The test was, I thought, a reasonable test. Last semester in 439 our tests lacked code. The questions were all conceptual, and in general asked us to apply what we had learned in class to given problems. For example a question might be analogous to &amp;quot;How would you design a file system for a given system?&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;I liked those tests, because if there&amp;#39;s one thing I don&amp;#39;t see a lot of in CS classes it&amp;#39;s system design.&lt;/p&gt;
+
+&lt;p&gt;However, this test was the exact opposite. It was entirely code. There were five questions, and each was of the form &amp;quot;write a function/class that conforms to these unit tests.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m of two minds on this type of test. On the one hand, it tests knowledge of syntax and whatnot. That&amp;#39;s certainly important, but on the test I made a critical mistake that having a compiler would have caught immediately (an off-by-one error that would cause an out-of-bounds access, if you must know).&lt;/p&gt;
+
+&lt;p&gt;Hopefully my comment here doesn&amp;#39;t cause the people grading the test to realize they missed something and go back to re-grade it down.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, though, it is claimed that the test is largely graded by computer. Which is awesome. Frankly though, if the test can be graded largely by computer, then I think maybe it&amp;#39;s better suited for an Intro to Programming class. We&amp;#39;re largely Juniors and Seniors, I think, we should all know how to make a program compile. The big issue is stylistic stuff.&lt;/p&gt;
+
+&lt;p&gt;I will reserve any judgement until we see how the test was graded. If they count off for semicolons than the acid rain of my criticism will scour the planet clean of life forms [1].&lt;/p&gt;
+
+&lt;p&gt;Tip of the Week: Don&amp;#39;t commit non-source files to git, and don&amp;#39;t commit large binary files to git. These just clog up your repo.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve already said that, so I will have a Tip of the Week 2: Know how your VCS of choice works. In particular: &lt;a href=&quot;https://developer.atlassian.com/blog/2015/01/a-better-pull-request/&quot;&gt;https://developer.atlassian.com/blog/2015/01/a-better-pull-request/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[1] If it hasn&amp;#39;t already. A colleague of mine once described my writing as &amp;quot;dripping with hatred&amp;quot;, which wasn&amp;#39;t really what I was going for. Maybe that explains why another friend of mine (&lt;a href=&quot;https://www.youtube.com/watch?v=_Avn2nT16FA&quot;&gt;Emperor Palpatine&lt;/a&gt;) really liked my blog posts.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Oct 2015 00:00:00 -0500</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/10/10/columbine.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/10/10/columbine.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>The Minority Report</title>
