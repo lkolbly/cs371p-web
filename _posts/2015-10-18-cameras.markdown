@@ -8,15 +8,15 @@ Little to report this week. I was unable to attend class on Monday because I was
 
 We got the scores back for the test, so that's good. I did approximately as well as I figured I would, so no complaints there.
 
-On Wednesday, Professor Downing called on me in class and we talked about how constructors and destructors are used in arrays. This is noteworthy in part because he called on me last week as well. Last week I was the recipient of a 15 minute conversation about Java's nested class system as compared to C++'s (or maybe vice-versa). I don't know how Downing decides who to call on next, but I have noticed that his die seems to land on me unusually often...
-
 Refresher: Downing will, throughout the lecture (in fact, for the majority of the lecture), call on students and ask them questions about code, carefully probing their knowledge about the code snippet.
+
+On Wednesday, Professor Downing called on me in class and we talked about how constructors and destructors are used in arrays. This is noteworthy in part because he called on me last week as well. Last week I was the recipient of a 15 minute conversation about Java's nested class system as compared to C++'s (or maybe vice-versa). I don't know how Downing decides who to call on next, but I have noticed that his die seems to land on me unusually often...
 
 What's surprising to me is that not everybody loves this part of class the most. There exist (hypothetical, I'm not naming names) people who, when called on, refuse to raise their hands and will hide. On the one hand, I can understand this, the first time I was called on I was nervous.
 
 But on the other hand, it's an opportunity for someone who gets paid on the order of $161 an hour [1] to personally explain to you some part of how C++ works, and you don't even have to show up to office hours.
 
-Also, it's good practice to speak in public about code, which is nothing if not importance. Confidence is a good thing to build.
+Also, it's good practice to speak in public about code, which is nothing if not important. Confidence is a good thing to build.
 
 With that, I leave you with my Tip of the Week: Learn to write well [2]. Proofread your work, ideally have a friend do so as well, and most importantly, read other people's writing. Nothing is more frusterating than having to read something that was poorly written.
 
