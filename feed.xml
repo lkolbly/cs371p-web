@@ -6,9 +6,38 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Oct 2015 19:01:18 -0500</pubDate>
-    <lastBuildDate>Sat, 10 Oct 2015 19:01:18 -0500</lastBuildDate>
+    <pubDate>Sun, 18 Oct 2015 16:01:13 -0500</pubDate>
+    <lastBuildDate>Sun, 18 Oct 2015 16:01:13 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Participado Potato</title>
+        <description>&lt;p&gt;Little to report this week. I was unable to attend class on Monday because I was physically ill, so I can&amp;#39;t report on what shenanigans happened that day.&lt;/p&gt;
+
+&lt;p&gt;We got the scores back for the test, so that&amp;#39;s good. I did approximately as well as I figured I would, so no complaints there.&lt;/p&gt;
+
+&lt;p&gt;On Wednesday, Professor Downing called on me in class and we talked about how constructors and destructors are used in arrays. This is noteworthy in part because he called on me last week as well. Last week I was the recipient of a 15 minute conversation about Java&amp;#39;s nested class system as compared to C++&amp;#39;s (or maybe vice-versa). I don&amp;#39;t know how Downing decides who to call on next, but I have noticed that his die seems to land on me unusually often...&lt;/p&gt;
+
+&lt;p&gt;Refresher: Downing will, throughout the lecture (in fact, for the majority of the lecture), call on students and ask them questions about code, carefully probing their knowledge about the code snippet.&lt;/p&gt;
+
+&lt;p&gt;What&amp;#39;s surprising to me is that not everybody loves this part of class the most. There exist (hypothetical, I&amp;#39;m not naming names) people who, when called on, refuse to raise their hands and will hide. On the one hand, I can understand this, the first time I was called on I was nervous.&lt;/p&gt;
+
+&lt;p&gt;But on the other hand, it&amp;#39;s an opportunity for someone who gets paid on the order of $161 an hour [1] to personally explain to you some part of how C++ works, and you don&amp;#39;t even have to show up to office hours.&lt;/p&gt;
+
+&lt;p&gt;Also, it&amp;#39;s good practice to speak in public about code, which is nothing if not importance. Confidence is a good thing to build.&lt;/p&gt;
+
+&lt;p&gt;With that, I leave you with my Tip of the Week: Learn to write well [2]. Proofread your work, ideally have a friend do so as well, and most importantly, read other people&amp;#39;s writing. Nothing is more frusterating than having to read something that was poorly written.&lt;/p&gt;
+
+&lt;p&gt;[1] Judging from &lt;a href=&quot;https://sp.austin.utexas.edu/sites/ut/rpt/Documents/IMA_FS_AvgFacSalColRankEXP_2013_AY.pdf&quot;&gt;the University of Texas at Austin Average Faculty Salaries, Headcount, and FTE&lt;/a&gt;. Average salary of a Computer Science professor is $145 thousand annually. Professor Downing teaches four classes, for a total of 10 credit hours, and he approximately doubles that time in office hours, so he works at least 20 hours a week (I don&amp;#39;t count grading and preparing for class and all that stuff, but he has a team of people to do some of that for him). Figuring he works 50 weeks a year, it comes out to around $161 hourly.&lt;/p&gt;
+
+&lt;p&gt;[2] I used to have a lead-in to this topic that involved international terrorists, Hitler, and President Clinton. It was too long, though, so you&amp;#39;ll just have to imagine what it was.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Oct 2015 00:00:00 -0500</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/10/18/cameras.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/10/18/cameras.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Check, 1, 2, 3...</title>
