@@ -6,9 +6,40 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Oct 2015 16:06:10 -0500</pubDate>
-    <lastBuildDate>Sun, 18 Oct 2015 16:06:10 -0500</lastBuildDate>
+    <pubDate>Sun, 25 Oct 2015 16:51:17 -0500</pubDate>
+    <lastBuildDate>Sun, 25 Oct 2015 16:51:17 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Spring 2016</title>
+        <description>&lt;p&gt;Dear Reader,&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;re reading this, then you&amp;#39;re either taking this class in Fall 2015 or you&amp;#39;re considering taking it this coming Spring, 2016.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;re considering registering for CS371p, Object Oriented Programming with Downing, G., then good for you. You&amp;#39;re going to learn C++.&lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s all I can promise you. This is either good news or bad news, depending on your opinions.&lt;/p&gt;
+
+&lt;p&gt;Dr. Downing does an excellent job teaching C++, and is truly an excellent lecturer in many ways. The projects are easy, and the tests are straightforward, so if these are qualities that you like in a class then by all means take it.&lt;/p&gt;
+
+&lt;p&gt;If you want to learn about anything other than C++, then abandon all hope, ye you enter here. This is not a theory class, do not expect to learn anything that can be applied anywhere else. If you are of the opinion that going to lecture for 3 hours a week to learn a new programming language is silly, because either a) you think that juniors in a CS program should be able to pick up a new language without someone spoon-feeding it to them, or b) you think that C++ will be obsolete in a few years, then don&amp;#39;t take this class.&lt;/p&gt;
+
+&lt;p&gt;If you think (b), then our hopes are aligned, but unfortunately far-fetched. C++ has been around longer than you or I.&lt;/p&gt;
+
+&lt;p&gt;So, there you have it. These are my thoughts on the class shrunk to 250 words.&lt;/p&gt;
+
+&lt;p&gt;Tip of the Week: &lt;a href=&quot;http://www.multicore-association.org/workgroup/mpp.php&quot;&gt;http://www.multicore-association.org/workgroup/mpp.php&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The ability to program multi-core systems is crucial as humanity hits the computational speed barrier. We&amp;#39;re at 16nm now in iPads, chips can only become so small. A group of people got together and made this platform-agnostic guide to programming on multi-core systems. It condenses the material well if you&amp;#39;re into that sort of thing (namely, programming for performance).&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, you do have to give them your email address to get the PDF. It&amp;#39;s probably elsewhere on the internet if you searched around, though.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Oct 2015 00:00:00 -0500</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/10/25/registration.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/10/25/registration.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Participado Potato</title>
