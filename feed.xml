@@ -6,9 +6,61 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Oct 2015 16:51:17 -0500</pubDate>
-    <lastBuildDate>Sun, 25 Oct 2015 16:51:17 -0500</lastBuildDate>
+    <pubDate>Sun, 01 Nov 2015 19:56:10 -0600</pubDate>
+    <lastBuildDate>Sun, 01 Nov 2015 19:56:10 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Design</title>
+        <description>&lt;p&gt;Well, snap.&lt;/p&gt;
+
+&lt;p&gt;Last week I railed against this class because it&amp;#39;s a language class.&lt;/p&gt;
+
+&lt;p&gt;This week our project focuses on design, though. The goal of the project is to write a program that does something or other - the details don&amp;#39;t matter. What matters is that our project architecture is what&amp;#39;s under scrutiny. At least, more so.&lt;/p&gt;
+
+&lt;p&gt;In past projects, the project architecture was prescribed to us. We were to have a specific API for specific functions, and that&amp;#39;s it. Here we design the API, and the project is big enough that it isn&amp;#39;t crazy to have multiple components.&lt;/p&gt;
+
+&lt;p&gt;For instance, in the Allocator project, we had to lay out the heap in a specific way and perform specific actions when allocate and deallocate are called.&lt;/p&gt;
+
+&lt;p&gt;Now I&amp;#39;m in a tough position when I answer questions on the class discussion board (Piazza). People will ask, &amp;quot;can I build class XYZ like such-and-such?&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;The answer is yes, always. You can do whatever you want. In past projects, it was the case that you couldn&amp;#39;t - you had to do it a specific way, like in the Allocator project.&lt;/p&gt;
+
+&lt;p&gt;The answer is that you shouldn&amp;#39;t, ninety percent of the time.&lt;/p&gt;
+
+&lt;p&gt;So how do you answer the queston? On the one hand, there really isn&amp;#39;t a single &amp;quot;right&amp;quot; or &amp;quot;best&amp;quot; answer. On the other hand, some answers are substantively worse than others. In my algorithms class, there was an uproar because of two reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;This was that teacher&amp;#39;s first semester, and&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We&amp;#39;re expected to know English.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In a sense, design is like the English language - it&amp;#39;s highly subjective. Should I use hyphens and rhetorical questions? (or, heck, should I even parenthesize?) A lot of people enjoy in classes easy tests and objective grading. These are both antithetical to programming, the first one on more personal grounds.&lt;/p&gt;
+
+&lt;p&gt;Code can be written densely, with single-letter variables and no comments. Or it can be written overly verbosely, with twenty lines of comments for every line of source and every variable is named something like the&lt;em&gt;iterator&lt;/em&gt;for&lt;em&gt;the&lt;/em&gt;loop&lt;em&gt;which&lt;/em&gt;counts&lt;em&gt;to&lt;/em&gt;n.&lt;/p&gt;
+
+&lt;p&gt;Each of these pieces of code can be equally valid, trivially producing identical machine code. But both of these are bad code, and there is a happy middle ground. I have never seen this middle ground quantified in a code quality grade.&lt;/p&gt;
+
+&lt;p&gt;A lot of classes (including this class, OOP) dedicate a few points for code quality. But I&amp;#39;ve never heard of losing points for that. I don&amp;#39;t remember ever losing points for that, and I&amp;#39;ve written some pretty gnarly code. The people who I&amp;#39;ve known who have lost points on &amp;quot;code quality&amp;quot; typically went and whined at the professor and got their points back.&lt;/p&gt;
+
+&lt;p&gt;So this class claims to be focusing at least in part on the design. The lectures do, don&amp;#39;t get me wrong. But we&amp;#39;ll see whether it gets graded objectively.&lt;/p&gt;
+
+&lt;p&gt;Of course, one problem with subjective grading is that we have a class of a million people (it seems). So there&amp;#39;s that.&lt;/p&gt;
+
+&lt;p&gt;Tip Of The Week: Spectre comes out on Thursday! We&amp;#39;ll see if Voldemort/M is everything he&amp;#39;s cracked up to be.&lt;/p&gt;
+
+&lt;p&gt;Wait, wrong tip of the week. Let&amp;#39;s try that again:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mp3gain.sourceforge.net/&quot;&gt;http://mp3gain.sourceforge.net/&lt;/a&gt; is a program that will losslessly volume-equalize a folder full of MP3 files. It even works on Linux.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ll let the reader guess how these two are related.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Nov 2015 00:00:00 -0500</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/11/01/design.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/11/01/design.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Spring 2016</title>
@@ -378,19 +430,6 @@ $ gcov -b ./Coverage2.c++ | grep -A 5 &amp;quot;File &amp;#39;Collatz2.h&amp;#39
         <pubDate>Sun, 30 Aug 2015 00:00:00 -0500</pubDate>
         <link>http://lkolbly.github.io/cs371p-web/2015/08/30/first-post.html</link>
         <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/08/30/first-post.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Hello, World!</title>
-        <description>&lt;p&gt;Hi, welcome to Lane Kolbly&amp;#39;s blog for CS371P (Object Oriented Programming)!&lt;/p&gt;
-
-&lt;p&gt;I run this blog because I get extra credit in the class, and this blog is for the class.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 29 Aug 2015 00:00:00 -0500</pubDate>
-        <link>http://lkolbly.github.io/cs371p-web/2015/08/29/hello.html</link>
-        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/08/29/hello.html</guid>
         
         
       </item>
