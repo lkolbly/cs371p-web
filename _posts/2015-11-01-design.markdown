@@ -1,0 +1,47 @@
+---
+layout: post
+title: "Design"
+date: 2015-11-01
+categories:
+---
+Well, snap.
+
+Last week I railed against this class because it's a language class.
+
+This week our project focuses on design, though. The goal of the project is to write a program that does something or other - the details don't matter. What matters is that our project architecture is what's under scrutiny. At least, more so.
+
+In past projects, the project architecture was prescribed to us. We were to have a specific API for specific functions, and that's it. Here we design the API, and the project is big enough that it isn't crazy to have multiple components.
+
+For instance, in the Allocator project, we had to lay out the heap in a specific way and perform specific actions when allocate and deallocate are called.
+
+Now I'm in a tough position when I answer questions on the class discussion board (Piazza). People will ask, "can I build class XYZ like such-and-such?"
+
+The answer is yes, always. You can do whatever you want. In past projects, it was the case that you couldn't - you had to do it a specific way, like in the Allocator project.
+
+The answer is that you shouldn't, ninety percent of the time.
+
+So how do you answer the queston? On the one hand, there really isn't a single "right" or "best" answer. On the other hand, some answers are substantively worse than others. In my algorithms class, there was an uproar because of two reasons:
+
+1. This was that teacher's first semester, and
+
+2. We're expected to know English.
+
+In a sense, design is like the English language - it's highly subjective. Should I use hyphens and rhetorical questions? (or, heck, should I even parenthesize?) A lot of people enjoy in classes easy tests and objective grading. These are both antithetical to programming, the first one on more personal grounds.
+
+Code can be written densely, with single-letter variables and no comments. Or it can be written overly verbosely, with twenty lines of comments for every line of source and every variable is named something like the_iterator_for_the_loop_which_counts_to_n.
+
+Each of these pieces of code can be equally valid, trivially producing identical machine code. But both of these are bad code, and there is a happy middle ground. I have never seen this middle ground quantified in a code quality grade.
+
+A lot of classes (including this class, OOP) dedicate a few points for code quality. But I've never heard of losing points for that. I don't remember ever losing points for that, and I've written some pretty gnarly code. The people who I've known who have lost points on "code quality" typically went and whined at the professor and got their points back.
+
+So this class claims to be focusing at least in part on the design. The lectures do, don't get me wrong. But we'll see whether it gets graded objectively.
+
+Of course, one problem with subjective grading is that we have a class of a million people (it seems). So there's that.
+
+Tip Of The Week: Spectre comes out on Thursday! We'll see if Voldemort/M is everything he's cracked up to be.
+
+Wait, wrong tip of the week. Let's try that again:
+
+http://mp3gain.sourceforge.net/ is a program that will losslessly volume-equalize a folder full of MP3 files. It even works on Linux.
+
+I'll let the reader guess how these two are related.
