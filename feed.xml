@@ -6,9 +6,74 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Nov 2015 21:56:17 -0600</pubDate>
-    <lastBuildDate>Sun, 08 Nov 2015 21:56:17 -0600</lastBuildDate>
+    <pubDate>Sun, 15 Nov 2015 21:51:12 -0600</pubDate>
+    <lastBuildDate>Sun, 15 Nov 2015 21:51:12 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Agilecat</title>
+        <description>&lt;p&gt;If you come seeking light-hearted poetry, stop now and go to last week&amp;#39;s post. This week I have only prose about Agile and a little bit about C++.&lt;/p&gt;
+
+&lt;p&gt;To give credit where credit is due: The lyrical structure of last week&amp;#39;s post was written by Sam Smith, who recently wrote a song: &lt;a href=&quot;https://www.youtube.com/watch?v=auXMPle74To&quot;&gt;https://www.youtube.com/watch?v=auXMPle74To&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Maybe I should start doing more poetry. Because I could not write C++, C++ kindly wrote for me? I dunno.&lt;/p&gt;
+
+&lt;p&gt;Friday in class I had an epiphany: C++ was written like C, in the sense that you can intimately control the mechanics of classes.&lt;/p&gt;
+
+&lt;p&gt;With this in mind, C++ starts to make a lot of sense.&lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s all I have about C++. This week&amp;#39;s reading was about various development strategies and the practice of continuous integration. CI should be done everywhere, no exceptions.&lt;/p&gt;
+
+&lt;p&gt;Agile has been referred to as &amp;quot;The New Methodology&amp;quot;, which I feel puts a slight bias towards it. It&amp;#39;s &amp;quot;New&amp;quot;! It must also be Shiny and Good!&lt;/p&gt;
+
+&lt;p&gt;The essay we read (&lt;a href=&quot;http://www.martinfowler.com/articles/newMethodology.html&quot;&gt;http://www.martinfowler.com/articles/newMethodology.html&lt;/a&gt;) makes a pretty decent argument that &amp;quot;Agile&amp;quot; programming is the appropriate way to code if you don&amp;#39;t have any requirements. Unfortunately, &amp;quot;Agile&amp;quot; doesn&amp;#39;t really mean anything, although I guess it&amp;#39;d be like most marketing terms in that respect. &amp;quot;Synergy&amp;quot; comes to mind. &amp;quot;Agile&amp;quot; just refers to any programming practice that&amp;#39;s full of coders who don&amp;#39;t know what they&amp;#39;re doing, so they make it up as they go. They formalize it in these &amp;quot;sprints&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m not against that practice per se, that&amp;#39;s how it&amp;#39;s been done everywhere I&amp;#39;ve worked. I am against using rediculous terms for no reason.&lt;/p&gt;
+
+&lt;p&gt;For instance, &amp;quot;information radiator&amp;quot;, which is just convoluted jargon for &amp;quot;post-it notes.&amp;quot; Maybe some of us should get together and synergize to construct an information radiator that clearly and concisely communicates informational messages about the convolution appearing on the &amp;quot;Agile Software Development&amp;quot; portion of the globally-distributed-editing paradigm existant on the decentralized topography of the Internet.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m surprised nobody else has done this already.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m also against pair programming. In this class we get a lot of experience programming in pairs. My experience has been that pair programming helps for the first two hours (or thereabouts), and then becomes pointless. In these first two hours, the design is fleshed out and very little useful code is written.&lt;/p&gt;
+
+&lt;p&gt;After the first two hours, it becomes one person implementing trivial functions while the other person tries not to fall asleep.&lt;/p&gt;
+
+&lt;p&gt;Take this code from a previous project for example:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;TEST(SpeciesFixture, species_handles_label) {
+    Species s(1);
+    s.addLabel(&amp;quot;start&amp;quot;);
+    s.addInstruction(Hop, 0);
+    s.addInstruction(Goto, &amp;quot;start&amp;quot;);
+    int pc = 0;
+    struct VisibleState vs;
+    vs.empty_ahead = false;
+    vs.wall_ahead = false;
+    vs.enemy_ahead = false;
+    ASSERT_EQ(s.execute(pc, vs), HopAction);
+    ASSERT_EQ(s.execute(pc, vs), HopAction);
+    ASSERT_EQ(pc, 1);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This code tests to see whether labels work in our instruction executor (&amp;quot;Species&amp;quot;).&lt;/p&gt;
+
+&lt;p&gt;Once you say that single line of English, it doesn&amp;#39;t matter what the code looks like. It doesn&amp;#39;t help to have a second person watching someone write it. If one person writes it, she will compile it and see if it works. Having a second person only slows her down: A second person might say, &amp;quot;well, all the vs. lines could be combined into one line,&amp;quot; and now she has to stop and they have to have a conversation about which is better.&lt;/p&gt;
+
+&lt;p&gt;Once you get past the high-level design, two people at a computer stops being useful. Some people say that it helps reduce bugs, but so does good design and good testing.&lt;/p&gt;
+
+&lt;p&gt;For example, the &lt;a href=&quot;http://www.fastcompany.com/28121/they-write-right-stuff&quot;&gt;Space Shuttle Software Group&lt;/a&gt; does not use pair programming, but rather uses good initial design. They have, on average, 1.5 bugs per software release (280,000 lines of code per bug) compared to the average commercial software which has 5000 bugs per software release (84 lines of code per bug).&lt;/p&gt;
+
+&lt;p&gt;One could argue that the SSSG is exceptional, and they are, that&amp;#39;s true. They&amp;#39;re also in a somewhat different industry that demands a more safety-critical approach than, say, a video game engineering team.&lt;/p&gt;
+
+&lt;p&gt;Point is, don&amp;#39;t promulgate pair programming. It&amp;#39;s just as effective as having one person write the code, then having another review it via a pull request.&lt;/p&gt;
+
+&lt;p&gt;Which leads me to the Tip of the Week: Know how to review code! Also know what a pull request is. Unfortunately you don&amp;#39;t learn these things in this class (CS371p), but perhaps find an open source project on Github (there&amp;#39;s at least &lt;a href=&quot;https://github.com/cuberite/cuberite&quot;&gt;one that uses C++&lt;/a&gt;) and contribute or, if you don&amp;#39;t feel like doing that, spend some time away from your Life partner submitting PRs (you&amp;#39;re allowed to spend 25% of your time on the project coding separately, more if you&amp;#39;re willing to lie).&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Nov 2015 00:00:00 -0600</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/11/14/sammy.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/11/14/sammy.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Unit Tests</title>
@@ -427,58 +492,6 @@ and
         <pubDate>Sat, 12 Sep 2015 00:00:00 -0500</pubDate>
         <link>http://lkolbly.github.io/cs371p-web/2015/09/12/projects.html</link>
         <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/09/12/projects.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>The Collatz Algorithm</title>
-        <description>&lt;p&gt;First off, shameless plug. Fill out the XKCD survey if you haven&amp;#39;t already:
-[&lt;a href=&quot;https://docs.google.com/forms/d/1PhEmGqYI84n6WmqifWf8ExLNe3EVBLcBPs1owYXWfPs/viewform?c=0&amp;amp;w=1&quot;&gt;https://docs.google.com/forms/d/1PhEmGqYI84n6WmqifWf8ExLNe3EVBLcBPs1owYXWfPs/viewform?c=0&amp;amp;w=1&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;Week two of my experience in CS371p (Object Oriented Programming). This week we started our first project, a program to find the longest Collatz chain within a range of numbers.&lt;/p&gt;
-
-&lt;p&gt;Not a difficult problem to solve by any stretch of the word.&lt;/p&gt;
-
-&lt;p&gt;But the difficulty in the project lies not in the programming. It lies in the paperwork around the project that we have to do. The goal of this class is not to learn object oriented programming, but to learn the tools of the trade: Git, continuous integration, unit tests, issue tracking, and so forth.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;#39;t know what the right way to teach these things is. I personally learned them through using them - I went to work at a company. The company used tool XYZ. I learned tool XYZ. I learned Git at WP Engine. I learned testing at Click Security (despite what they may tell you). Even though L5 proved beyond a doubt that freelancing was not what I was meant for, I learned many valuable lessons there about ethics and timekeeping and tests and documentation etc.&lt;/p&gt;
-
-&lt;p&gt;In each of these cases, though, I was in the real world using the tools. I learned how to use issue tracking in a world where we had to track thousands of issues at the same time quickly and efficiently or else the company would fold under its own weight.&lt;/p&gt;
-
-&lt;p&gt;The class attempts to teach issue tracking by forcing us to use an issue tracker. Naively, you might think that&amp;#39;s great. But we&amp;#39;re forced to file a certain number of issues, on a project which we&amp;#39;re working alone on. Issue trackers are not built to track issues, tracking issues is easy and any programmer worth giving a keyboard knows how to keep a TODO list of issues. I personally use a text file, some use post-it notes. Some use an issue tracker for that, there&amp;#39;s nothing wrong with that.&lt;/p&gt;
-
-&lt;p&gt;But let&amp;#39;s be honest, it takes about a second to learn how to use the Github issue tracker.&lt;/p&gt;
-
-&lt;p&gt;The real power of issue tracking is in coordinating people. Imagine you work in a company of about 120-130 people. There are maybe a half-dozen technical teams at said company. Now imagine you are working on a problem where people with Italian names don&amp;#39;t appear in the final product. (by the way, the product consists of a data pipeline where data is piped from the customer, through machinery, and then gets moved to the product team&amp;#39;s territory) You are the person responsible for fixing the problem. What do you do?&lt;/p&gt;
-
-&lt;p&gt;You probably try to identify the problem in the part you have control over, the data pipeline. You look through it, make some notes, and then posit that it is a problem with the product team. So you go over to Jill&amp;#39;s desk and tell her, &amp;quot;Hey, I&amp;#39;ve been working on bug XYZ.&amp;quot; You tell her what you know, she writes it on a post-it, and you part ways as happy workfellows.&lt;/p&gt;
-
-&lt;p&gt;A couple weeks later, maybe it&amp;#39;s on a Wednesday and the company catered BBQ that day. You sit down to your ribs, and Greg sits down across from you and asks, &amp;quot;Hey, so is bug XYZ fixed?&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;You reply, &amp;quot;Dude, I&amp;#39;m eating BBQ, buzz off.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;Just kidding. You reply, &amp;quot;I don&amp;#39;t know, I gave that to Jill.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;Greg thanks you and goes to Jill. Jill says she gave it to Jimbo. Jimbo gave it to Kat. Kat got married last weekend and will be off the grid on her honeymoon until late next week.&lt;/p&gt;
-
-&lt;p&gt;So now nobody knows if it&amp;#39;s been fixed. Maybe Kat fixed it but hasn&amp;#39;t committed it yet. Maybe she&amp;#39;s halfway fixed it. Maybe she gave it to someone else in the company.&lt;/p&gt;
-
-&lt;p&gt;Enter the infomercial voiceover. &amp;quot;If you&amp;#39;ve ever had problems like these... Try issue tracking! &lt;small&gt;May cause heart problems or temporary insanity. See your doctor for details.&lt;/small&gt;&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;This is what issue tracking is for, and the in-class projects are (so far) a poor representation of that.&lt;/p&gt;
-
-&lt;p&gt;Note that I&amp;#39;m not espousing any particular way that I think issue tracking should be taught. I think it is impractical for everyone to learn on the job. I have long thought that programming should be taught via a single, large, open-source project. You are graded based on your contributions. End of story.&lt;/p&gt;
-
-&lt;p&gt;Tip of the week: Know the &amp;quot;bus factor&amp;quot;: It&amp;#39;s the number of people that can be hit by a bus before the project fails. A larger number is better. That way, no one person is in charge of too much - if the bus factor is 1 or 2 in a large company (&amp;gt;20 people), then maybe their job encompasses too much.&lt;/p&gt;
-
-&lt;p&gt;As always, assume the buses are smart and malicious.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/cs371p-web/busfactor.jpg&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 06 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://lkolbly.github.io/cs371p-web/2015/09/06/hotels.html</link>
-        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/09/06/hotels.html</guid>
         
         
       </item>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Agilecat</title>
+  <meta name="description" content="If you come seeking light-hearted poetry, stop now and go to last week&#39;s post. This week I have only prose about Agile and a little bit about C++.">
+
+  <link rel="stylesheet" href="/cs371p-web/css/main.css">
+  <link rel="canonical" href="http://lkolbly.github.io/cs371p-web/2015/11/14/sammy.html">
+  <link rel="alternate" type="application/rss+xml" title="CS371p Fall 2015: Lane Kolbly" href="http://lkolbly.github.io/cs371p-web/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/cs371p-web/">Home</a>
+        
+          
+          <a class="page-link" href="/cs371p-web/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">Agilecat</h1>
+     <p class="post-meta">Posted on Nov 14, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>If you come seeking light-hearted poetry, stop now and go to last week&#39;s post. This week I have only prose about Agile and a little bit about C++.</p>
+
+<p>To give credit where credit is due: The lyrical structure of last week&#39;s post was written by Sam Smith, who recently wrote a song: <a href="https://www.youtube.com/watch?v=auXMPle74To">https://www.youtube.com/watch?v=auXMPle74To</a></p>
+
+<p>Maybe I should start doing more poetry. Because I could not write C++, C++ kindly wrote for me? I dunno.</p>
+
+<p>Friday in class I had an epiphany: C++ was written like C, in the sense that you can intimately control the mechanics of classes.</p>
+
+<p>With this in mind, C++ starts to make a lot of sense.</p>
+
+<p>That&#39;s all I have about C++. This week&#39;s reading was about various development strategies and the practice of continuous integration. CI should be done everywhere, no exceptions.</p>
+
+<p>Agile has been referred to as &quot;The New Methodology&quot;, which I feel puts a slight bias towards it. It&#39;s &quot;New&quot;! It must also be Shiny and Good!</p>
+
+<p>The essay we read (<a href="http://www.martinfowler.com/articles/newMethodology.html">http://www.martinfowler.com/articles/newMethodology.html</a>) makes a pretty decent argument that &quot;Agile&quot; programming is the appropriate way to code if you don&#39;t have any requirements. Unfortunately, &quot;Agile&quot; doesn&#39;t really mean anything, although I guess it&#39;d be like most marketing terms in that respect. &quot;Synergy&quot; comes to mind. &quot;Agile&quot; just refers to any programming practice that&#39;s full of coders who don&#39;t know what they&#39;re doing, so they make it up as they go. They formalize it in these &quot;sprints&quot;.</p>
+
+<p>I&#39;m not against that practice per se, that&#39;s how it&#39;s been done everywhere I&#39;ve worked. I am against using rediculous terms for no reason.</p>
+
+<p>For instance, &quot;information radiator&quot;, which is just convoluted jargon for &quot;post-it notes.&quot; Maybe some of us should get together and synergize to construct an information radiator that clearly and concisely communicates informational messages about the convolution appearing on the &quot;Agile Software Development&quot; portion of the globally-distributed-editing paradigm existant on the decentralized topography of the Internet.</p>
+
+<p>I&#39;m surprised nobody else has done this already.</p>
+
+<p>I&#39;m also against pair programming. In this class we get a lot of experience programming in pairs. My experience has been that pair programming helps for the first two hours (or thereabouts), and then becomes pointless. In these first two hours, the design is fleshed out and very little useful code is written.</p>
+
+<p>After the first two hours, it becomes one person implementing trivial functions while the other person tries not to fall asleep.</p>
+
+<p>Take this code from a previous project for example:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">TEST(SpeciesFixture, species_handles_label) {
+    Species s(1);
+    s.addLabel(&quot;start&quot;);
+    s.addInstruction(Hop, 0);
+    s.addInstruction(Goto, &quot;start&quot;);
+    int pc = 0;
+    struct VisibleState vs;
+    vs.empty_ahead = false;
+    vs.wall_ahead = false;
+    vs.enemy_ahead = false;
+    ASSERT_EQ(s.execute(pc, vs), HopAction);
+    ASSERT_EQ(s.execute(pc, vs), HopAction);
+    ASSERT_EQ(pc, 1);
+}
+</code></pre></div>
+<p>This code tests to see whether labels work in our instruction executor (&quot;Species&quot;).</p>
+
+<p>Once you say that single line of English, it doesn&#39;t matter what the code looks like. It doesn&#39;t help to have a second person watching someone write it. If one person writes it, she will compile it and see if it works. Having a second person only slows her down: A second person might say, &quot;well, all the vs. lines could be combined into one line,&quot; and now she has to stop and they have to have a conversation about which is better.</p>
+
+<p>Once you get past the high-level design, two people at a computer stops being useful. Some people say that it helps reduce bugs, but so does good design and good testing.</p>
+
+<p>For example, the <a href="http://www.fastcompany.com/28121/they-write-right-stuff">Space Shuttle Software Group</a> does not use pair programming, but rather uses good initial design. They have, on average, 1.5 bugs per software release (280,000 lines of code per bug) compared to the average commercial software which has 5000 bugs per software release (84 lines of code per bug).</p>
+
+<p>One could argue that the SSSG is exceptional, and they are, that&#39;s true. They&#39;re also in a somewhat different industry that demands a more safety-critical approach than, say, a video game engineering team.</p>
+
+<p>Point is, don&#39;t promulgate pair programming. It&#39;s just as effective as having one person write the code, then having another review it via a pull request.</p>
+
+<p>Which leads me to the Tip of the Week: Know how to review code! Also know what a pull request is. Unfortunately you don&#39;t learn these things in this class (CS371p), but perhaps find an open source project on Github (there&#39;s at least <a href="https://github.com/cuberite/cuberite">one that uses C++</a>) and contribute or, if you don&#39;t feel like doing that, spend some time away from your Life partner submitting PRs (you&#39;re allowed to spend 25% of your time on the project coding separately, more if you&#39;re willing to lie).</p>
+
+
+    <img src="/cs371p-web/lane.jpg" />
+    <p>This is an image of me doing what I do when I'm not at a computer.</p>
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Copyright &copy; <a href=http://diezcami.github.io target="_blank">Camille Diez</a> 2015<BR />
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
+
+</div>
+
+
+  </body>
+</html>
