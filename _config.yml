@@ -8,6 +8,15 @@ url: "http://lkolbly.github.io" # the base hostname & protocol for your site
 twitter_username: username
 github_username: username
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      header_image_url: /lane.jpg
+      header_image_caption: "This is an image of me doing what I do when I'm not at a computer."
+
 # Build settings
 markdown: redcarpet
 markdown_ext:  markdown,mkdown,mkdn,mkd,md

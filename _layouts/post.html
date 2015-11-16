@@ -11,8 +11,8 @@ layout: default
   <article class="post-content">
     {{ content }}
 
-    <img src="{{ "/lane.jpg" | prepend: site.baseurl }}" />
-    <p>This is an image of me doing what I do when I'm not at a computer.</p>
+    <img src="{{ page.header_image_url | prepend: site.baseurl }}" />
+    <p>{{page.header_image_caption}}</p>
   </article>
 
   <div align="center">
