@@ -72,6 +72,10 @@ You never know when you might make a sexist implication without even realizing i
 
 Maybe I'm just paranoid because I read Malcolm Galdwell's Blink, which is a scary book if nothing else. Certainly worth a read, though.
 
+Another Tip of the Week: Never ever try to edit a blog post (or anything) on a single-spaced printout. Also never try to edit anything using a printer that prints streaks on the paper.
+
+Yes, I am old school and edit using paper. It's better that way.
+
 [1] Gender identity in ancient Roman literature is interesting if you're into women on pedestals.
 
 [2] Except maybe for the ones that rape 1 in 5 college women? I've never understood how that worked. Are there a few individuals that rape a lot of people and never get caught, or is it more distributed? I've always assumed the former, but I don't know. I thought of a joke involving college fraternities and ISIS, but I won't say it.
