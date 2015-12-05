@@ -6,9 +6,72 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Nov 2015 11:06:18 -0600</pubDate>
-    <lastBuildDate>Tue, 24 Nov 2015 11:06:18 -0600</lastBuildDate>
+    <pubDate>Sat, 05 Dec 2015 11:46:12 -0600</pubDate>
+    <lastBuildDate>Sat, 05 Dec 2015 11:46:12 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Male, Seeks Terrible Female Engineer</title>
+        <description>&lt;p&gt;Now, this is a story all about how&lt;/p&gt;
+
+&lt;p&gt;I learned C++ - I know it&amp;#39;s upside down.&lt;/p&gt;
+
+&lt;p&gt;And I&amp;#39;d like to take a minute&lt;/p&gt;
+
+&lt;p&gt;Just sit right there&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ll tell you how Dr. Downing taught C++.&lt;/p&gt;
+
+&lt;p&gt;C++ ain&amp;#39;t a great language.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ll give it that. But I wrote a few thousand lines of it this semester, around 3 to be exact. In the past I&amp;#39;ve written well over ten kilolines in that unfortunate language.&lt;/p&gt;
+
+&lt;p&gt;So I came to this class with a working knowledge of C++. This class taught me the details. So that&amp;#39;s one thing.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s not worth taking a class to learn a language, though. C++ compilers are freely available, and any programmer worth his or her weight in salt [1] can pick up how to use the STL, references, templated classes, and iterators.&lt;/p&gt;
+
+&lt;p&gt;And anyway, anything you learn today will be either obsoleted by industry or forgotten by you by the time you get a stable job.&lt;/p&gt;
+
+&lt;p&gt;This class also makes reference to unit tests, code coverage tests, and CI. These are all things you can pick up on the job or on your own time. But this is similar to above - not worth taking the whole semester class for a single lecture about these concepts. Sneak in the back of the classroom, the times and rooms are listed in UT&amp;#39;s course schedule.&lt;/p&gt;
+
+&lt;p&gt;But what this class taught me were grownup words, like &lt;em&gt;static binding&lt;/em&gt; or &lt;em&gt;dynamic binding&lt;/em&gt; or &lt;em&gt;replacement overriding&lt;/em&gt; or &lt;em&gt;reflection&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;So many fancy words!&lt;/p&gt;
+
+&lt;p&gt;But now I can apply what I learned here to my favorite language, Go! (not to be confused with the Go! language. That was a syntactic exclamation point, not part of the name.)&lt;/p&gt;
+
+&lt;p&gt;I digress.&lt;/p&gt;
+
+&lt;p&gt;If you do take this class, know a little bit about C++. Know how to write a basic program using classes and the STL. Have experience using a source control system (like git or hg, not like folders named project, project1, project2, project_old, etc.), or else you&amp;#39;ll learn it all wrong in this class (you commit source files, not compiled results, don&amp;#39;t let anyone tell you otherwise).&lt;/p&gt;
+
+&lt;p&gt;That said, this class is pretty much a C++-specific class. If you really want to learn object-oriented-programming theory, take a different class. But it is possible to take this class and learn more than C++ workarounds.&lt;/p&gt;
+
+&lt;p&gt;Dr. Downing asked if I thought the class was worth the time. I think so. I&amp;#39;m not convinced it would be worth the advertised 24 hours per week, though. I probably spent about 3 hours a week on lectures and 6 hours a week on the projects, on average. Maybe another 2-3 hours a week writing these blog posts, but that&amp;#39;s probably more time than anyone else spends on their blog posts (though some of them are certainly very well written).&lt;/p&gt;
+
+&lt;p&gt;Disclaimer: I tend to work on the fast side of the average, so your results may vary.&lt;/p&gt;
+
+&lt;p&gt;This class is absolutely worth it if you put in the time. What do I mean? I dunno. If you sleep through lectures and don&amp;#39;t spend every waking moment thinking about the ramifications of what Professor said about how C++ implements dynamic binding, then you&amp;#39;re missing something crucial. Time and time again I have heard that low-level stuff isn&amp;#39;t worth knowing if you deal with the high-level stuff. But if you don&amp;#39;t understand how C++ keeps a field in the class which points to a vtable, how will you understand dynamic binding? If you don&amp;#39;t understand that, what hope is there for when things go terribly wrong?&lt;/p&gt;
+
+&lt;p&gt;This class is worth your time, but it conceals that very well. The projects are very practical, objective, and result-based. The tests have you write code to perform relatively mundane tasks.&lt;/p&gt;
+
+&lt;p&gt;A passing observer may say, by golly! This is just a language class! How useless!&lt;/p&gt;
+
+&lt;p&gt;A student who puts a little time into the class beyond the strict base requirements may say, by golly! This is a concepts class!&lt;/p&gt;
+
+&lt;p&gt;Po-TAY-to. To-MAH-to.&lt;/p&gt;
+
+&lt;p&gt;If you prefer a graphical interpretation of the class, this is a graph of the number of words in my various blog posts over time, categorized by how I felt:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lkolbly.github.io/wordcount-graph-labelled.png&quot; alt=&quot;Helpful screenshot&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;[1] Under a penny, at $50 per ton. I guess the phrase comes from ancient times, when salt was very expensive: I once met a professor who studied ancient economy through salt prices in ancient Greece.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Nov 2015 00:00:00 -0600</pubDate>
+        <link>http://lkolbly.github.io/cs371p-web/2015/11/22/over-and-out.html</link>
+        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/11/22/over-and-out.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Male, Seeks Terrible Female Engineer</title>
@@ -495,40 +558,6 @@ and
         <pubDate>Sat, 26 Sep 2015 00:00:00 -0500</pubDate>
         <link>http://lkolbly.github.io/cs371p-web/2015/09/26/sillyscopes.html</link>
         <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/09/26/sillyscopes.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Hot, or Not?</title>
-        <description>&lt;p&gt;This week we got our second project, and our first pair project. The goal of the project is to implement Range voting, which is what&amp;#39;s used on the &amp;quot;Hot or Not&amp;quot; website.&lt;/p&gt;
-
-&lt;p&gt;As week 4 draws to a close, I realize that the class won&amp;#39;t change drastically enough for me to have much to say about it. I&amp;#39;m still on the fence about whether I would recommend this class (which is the point of this blog - to give my impression of the class).&lt;/p&gt;
-
-&lt;p&gt;Today, I will talk about those online programming challenge websites. I have never been a fan of these, especially with the open-loop debugging style where the website says &amp;quot;you have a bug!&amp;quot; but doesn&amp;#39;t tell you what triggered it. On top of that, I have never been impressed by the challenges that they offer - many I find trivial to implement, let alone being a challenge.&lt;/p&gt;
-
-&lt;p&gt;There are two exceptions to this, though. One is &lt;a href=&quot;http://www.usaco.org/&quot;&gt;USACO&lt;/a&gt;, the other is &lt;a href=&quot;https://projecteuler.net/archives&quot;&gt;Project Euler&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;USACO has the property that they stress good algorithm design - your algorithm has to be the most efficient, or else you will time out. Take the Voting project for example - the input is limited to 20 candidates and 1000 ballots. Your algorithm could be exponential time in the number of candidates without the program timing out.&lt;/p&gt;
-
-&lt;p&gt;I was never any good at USACO because of this. I have the bad habit of writing code that works. This is a terrible habit to get into, for the reason above: I don&amp;#39;t pay attention to the quality of the algorithm. I frankly don&amp;#39;t care whether our submission to the Voting project is exponential in the number of candidates. But I should care deeply. USACO was the first place I encountered where I had to care or lose.&lt;/p&gt;
-
-&lt;p&gt;Typically I lost anyway, but that&amp;#39;s beside the point.&lt;/p&gt;
-
-&lt;p&gt;The other one is Project Euler, which is the same thing but for math rather than programming. Full disclosure: I&amp;#39;ve only done one or two of the easiest problems. Point is, both require you to think beyond the mechanics of the code to the strategy. We&amp;#39;ve all been programming for at least a year (assuming you didn&amp;#39;t take 312, took 314 a year ago, and took 429 last semester), code mechanics shouldn&amp;#39;t be the focus. Algorithms should be.&lt;/p&gt;
-
-&lt;p&gt;Incidentally, I&amp;#39;m also taking CS 331, &amp;quot;Algorithms Design &amp;amp; Complexity&amp;quot;, this semester.&lt;/p&gt;
-
-&lt;p&gt;Consejo de la Semana: Know the problem domain. I&amp;#39;m taking Embedded Systems Development this semester. One of our projects is to build an accurate stopwatch, controlled over a serial console. The instinctive route is to use a hardware timer, but it turns out that the best route is to simply time the device and tweak cycle counts. Programming embedded requires an appropriate mindset, as does programming for the web or local machines or anything else.&lt;/p&gt;
-
-&lt;p&gt;Much like the example above with USACO. On USACO you have to be keenly aware of time constraints. Less so with some arbitrary class project.&lt;/p&gt;
-
-&lt;p&gt;A classmate of mine posted a link to an article Joel Spolsky wrote about this:
-[&lt;a href=&quot;http://www.joelonsoftware.com/articles/FiveWorlds.html&quot;&gt;http://www.joelonsoftware.com/articles/FiveWorlds.html&lt;/a&gt;]&lt;/p&gt;
-</description>
-        <pubDate>Sun, 20 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://lkolbly.github.io/cs371p-web/2015/09/20/cats.html</link>
-        <guid isPermaLink="true">http://lkolbly.github.io/cs371p-web/2015/09/20/cats.html</guid>
         
         
       </item>
