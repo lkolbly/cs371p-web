@@ -56,4 +56,6 @@ If you prefer a graphical interpretation of the class, this is a graph of the nu
 
 ![Helpful screenshot]({{site.baseurl}}/wordcount-graph-labelled.png)
 
+Tip of the Week: Don't drink and drive.
+
 [1] Under a penny, at $50 per ton. I guess the phrase comes from ancient times, when salt was very expensive: I once met a professor who studied ancient economy through salt prices in ancient Greece.
