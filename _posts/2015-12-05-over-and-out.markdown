@@ -54,6 +54,6 @@ Po-TAY-to. To-MAH-to.
 
 If you prefer a graphical interpretation of the class, this is a graph of the number of words in my various blog posts over time, categorized by how I felt:
 
-![Helpful screenshot]({{site.url}}/wordcount-graph-labelled.png)
+![Helpful screenshot]({{site.baseurl}}/wordcount-graph-labelled.png)
 
 [1] Under a penny, at $50 per ton. I guess the phrase comes from ancient times, when salt was very expensive: I once met a professor who studied ancient economy through salt prices in ancient Greece.
