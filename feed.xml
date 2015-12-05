@@ -6,8 +6,8 @@
 </description>
     <link>http://lkolbly.github.io/cs371p-web/</link>
     <atom:link href="http://lkolbly.github.io/cs371p-web/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Dec 2015 11:47:00 -0600</pubDate>
-    <lastBuildDate>Sat, 05 Dec 2015 11:47:00 -0600</lastBuildDate>
+    <pubDate>Sat, 05 Dec 2015 11:48:53 -0600</pubDate>
+    <lastBuildDate>Sat, 05 Dec 2015 11:48:53 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -62,7 +62,7 @@
 
 &lt;p&gt;If you prefer a graphical interpretation of the class, this is a graph of the number of words in my various blog posts over time, categorized by how I felt:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://lkolbly.github.io/wordcount-graph-labelled.png&quot; alt=&quot;Helpful screenshot&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/cs371p-web/wordcount-graph-labelled.png&quot; alt=&quot;Helpful screenshot&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;[1] Under a penny, at $50 per ton. I guess the phrase comes from ancient times, when salt was very expensive: I once met a professor who studied ancient economy through salt prices in ancient Greece.&lt;/p&gt;
 </description>
